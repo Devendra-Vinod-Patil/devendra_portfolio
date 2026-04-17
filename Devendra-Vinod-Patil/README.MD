@@ -1,10 +1,11 @@
 <div align="center">
 
-<!-- ✅ FIXED HEADER -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Hey%20There!&fontSize=55&fontColor=ffffff&fontAlignY=35&desc=Data%20Scientist%20%7C%20AI%2FML%20Engineer&descAlignY=58&descSize=22&animation=fadeIn" />
+<!-- 💜 HEADER (Purple → Pink Gradient) -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:800080,50:bf40bf,100:ffc0cb&height=220&section=header&text=Hey%20There!&fontSize=55&fontColor=ffffff&fontAlignY=35&desc=Data%20Scientist%20%7C%20AI%2FML%20Engineer&descAlignY=58&descSize=22&animation=fadeIn" />
 
-<!-- ✅ FIXED TYPING SVG (NO EMOJIS) -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=650&lines=AI+and+Machine+Learning+Explorer;Turning+Data+into+Insights;Prompt+Engineer+and+BI+Developer;Building+One+Model+at+a+Time" />
+<!-- 💡 TYPING SVG (MATCHED COLOR THEME) -->
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=3000&pause=800&color=bf40bf&center=true&vCenter=true&width=650&lines=AI+and+Machine+Learning+Explorer;Turning+Data+into+Insights;Prompt+Engineer+and+BI+Developer;Building+One+Model+at+a+Time" />
+
 
 <br/>
 
@@ -16,7 +17,7 @@
 
 </div>
 
----## 🧑‍💻 About Me
+## 🧑‍💻 About Me
 
 <img align="right" alt="Coding GIF" width="360" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
 
@@ -130,7 +131,7 @@ me.say_hi()
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" />
+<img src="https://github-profile-trophy.vercel.app/?username=Devenndra-Vinod-Patil&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" />
 
 </div>
 
@@ -181,7 +182,5 @@ me.say_hi()
 **🌟 If you find my work interesting, drop a ⭐ on my repositories — it means a lot!**
 
 <br/>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" />
-
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:800080,50:bf40bf,100:ffc0cb&height=120&section=footer&animation=fadeIn" />
 </div>
