@@ -23,21 +23,16 @@
 ```python
 class DataScientist:
     def __init__(self):
-        self.name        = "Your Name"
-        self.role        = ["Data Scientist", "AI/ML Engineer"]
-        self.level       = "🌱 Beginner | Learner | Builder"
-        self.location    = "India 🇮🇳"
-        self.languages   = ["Python", "C", "JavaScript",
-                            "PHP", "HTML", "CSS"]
-        self.ml_stack    = ["Pandas", "NumPy", "Scikit-learn",
-                            "Matplotlib", "Seaborn"]
-        self.tools       = ["Power BI", "Orange", "MySQL",
-                            "Git", "Jupyter Notebook"]
-        self.ai_focus    = ["Machine Learning", "EDA",
-                            "Prompt Engineering", "BI Dashboards"]
-        self.currently   = "📖 Learning ML fundamentals & building projects"
-        self.goal        = "💼 Land my first Data Science role"
-        self.fun_fact    = "Every dataset tells a story 📖"
+        self.name      = "Devendra Vinod Patil"
+        self.role      = "Data Scientist | AI/ML Engineer"
+        self.location  = "India 🇮🇳"
+        
+        self.languages = ["Python", "JavaScript", "C"]
+        self.ml_stack  = ["Pandas", "NumPy", "Scikit-learn"]
+        self.tools     = ["Power BI", "MySQL", "Git"]
+        
+        self.focus     = ["Machine Learning", "Data Analysis", "EDA"]
+        self.goal      = "Land a Data Science role"
 
     def say_hi(self):
         print("Thanks for visiting! Let's connect & grow together 🚀")
@@ -56,7 +51,7 @@ me.say_hi()
 | 🌱 Currently Learning | ML algorithms, Power BI & SQL |
 | 👯 Looking to Collaborate | Open-source Data & AI projects |
 | 💬 Ask Me About | Python, Data Analysis, Prompt Engineering |
-| 📫 Reach Me At | [LinkedIn](#) · [Email](#) |
+| 📫 Reach Me At | [LinkedIn](https://www.linkedin.com/in/devendra984/) · [Email](patildevendra984@gmail.com) |
 | ⚡ Fun Fact | I can spend hours exploring a single dataset! |
 
 </div>
@@ -119,55 +114,17 @@ me.say_hi()
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF" />
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6F00&currStreakLabel=58A6FF" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=Devendra-Vinod-Patil&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF" />
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Devendra-Vinod-Patil&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6F00&currStreakLabel=58A6FF" />
 
 <br/>
 
-<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&langs_count=8" />
+<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Devendra-vinod-Patil&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&langs_count=8" />
 
 </div>
 
----
 
-## 🌱 Learning Roadmap
 
-```
-🗺️  MY DATA SCIENCE JOURNEY — 2024 → Present
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
- Python Fundamentals        ████████████████████  ✅ Done
- HTML / CSS / JavaScript    ████████████████████  ✅ Done
- SQL & MySQL                ███████████████░░░░░  75%
- Data Analysis & EDA        ██████████████░░░░░░  70%
- Power BI Dashboards        █████████████░░░░░░░  65%
- Machine Learning Basics    ████████████░░░░░░░░  60%
- Prompt Engineering         ███████████░░░░░░░░░  55%
- Orange Tool (Visual ML)    ██████████░░░░░░░░░░  50%
- Scikit-learn Models        █████████░░░░░░░░░░░  45%
- Deep Learning              ████░░░░░░░░░░░░░░░░  20%
- ML Deployment              ███░░░░░░░░░░░░░░░░░  15%
-```
-
----
-
-## 🚀 Projects
-
-> 🌟 *Building my portfolio one project at a time!*
-
-<div align="center">
-
-| 🗂️ Project | 📝 Description | 🧰 Tech Stack | 📌 Status |
-|:----------:|:--------------|:-------------:|:---------:|
-| 🔍 **Data Explorer** | EDA on real-world public datasets with visualizations | Python · Pandas · Matplotlib | 🔄 In Progress |
-| 📊 **Sales Dashboard** | Interactive BI dashboard with KPIs & trends | Power BI · MySQL | 🔄 In Progress |
-| 🤖 **ML Classifier** | Classification model for structured data | Python · Scikit-learn · Seaborn | 🌱 Planned |
-| 🧠 **Prompt Lab** | Collection of tested prompt engineering templates | ChatGPT · Claude · Python | 🌱 Planned |
-| 🌐 **Portfolio Site** | Personal portfolio website | HTML · CSS · JS · PHP | 🌱 Planned |
-
-</div>
-
----
 
 ## 🏆 GitHub Trophies
 
@@ -183,7 +140,7 @@ me.say_hi()
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FF6F00&area=true&hide_border=true" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Devendra-Vinod-Patil&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FF6F00&area=true&hide_border=true" />
 
 </div>
 
@@ -193,19 +150,17 @@ me.say_hi()
 
 <div align="center">
 
-<a href="https://linkedin.com/in/YOUR_LINKEDIN">
+<a href="https://www.linkedin.com/in/devendra984/">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>&nbsp;
-<a href="https://github.com/YOUR_GITHUB_USERNAME">
+<a href="https://github.com/Devendra-Vinod-Patil">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>&nbsp;
-<a href="mailto:your.email@gmail.com">
+<a href="mailto:patildevendra984@gmail.com">
   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>&nbsp;
-<a href="https://twitter.com/YOUR_TWITTER">
-  <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
-</a>&nbsp;
-<a href="https://kaggle.com/YOUR_KAGGLE">
+
+<a href="https://kaggle.com/devendra2004">
   <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" />
 </a>
 
