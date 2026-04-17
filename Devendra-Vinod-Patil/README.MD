@@ -1,22 +1,22 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Hey%20There!%20%F0%9F%91%8B&fontSize=55&fontColor=fff&fontAlignY=35&desc=I%27m%20a%20Data%20Scientist%20%26%20AI%2FML%20Engineer&descAlignY=58&descSize=22&animation=twinkling" />
+<!-- ✅ FIXED HEADER -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Hey%20There!&fontSize=55&fontColor=ffffff&fontAlignY=35&desc=Data%20Scientist%20%7C%20AI%2FML%20Engineer&descAlignY=58&descSize=22&animation=fadeIn" />
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=650&lines=🤖+AI+%26+Machine+Learning+Explorer;📊+Turning+Raw+Data+into+Insights;💡+Prompt+Engineer+%26+BI+Developer;🌱+Beginner+with+Big+Ambitions;🚀+Building+One+Model+at+a+Time!" alt="Typing SVG" />
-</a>
+<!-- ✅ FIXED TYPING SVG (NO EMOJIS) -->
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=650&lines=AI+and+Machine+Learning+Explorer;Turning+Data+into+Insights;Prompt+Engineer+and+BI+Developer;Building+One+Model+at+a+Time" />
 
 <br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&label=Profile+Views&color=58A6FF&style=flat-square)&nbsp;
-![GitHub followers](https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?label=Followers&style=flat-square&color=58A6FF)&nbsp;
-[![Open to Collaborate](https://img.shields.io/badge/Open%20to-Collaborate-brightgreen?style=flat-square)](https://github.com/YOUR_GITHUB_USERNAME)
+</div>
+
+![Profile Views](https://komarev.com/ghpvc/?username=Devendra-Vinod-Patil&label=Profile+Views&color=58A6FF&style=flat-square)&nbsp;
+![GitHub followers](https://img.shields.io/github/followers/Devendra-Vinod-Patil?label=Followers&style=flat-square&color=58A6FF)&nbsp;
+[![Open to Collaborate](https://img.shields.io/badge/Open%20to-Collaborate-brightgreen?style=flat-square)](https://github.com/Devendra-Vinod-Patil)
 
 </div>
 
----
-
-## 🧑‍💻 About Me
+---## 🧑‍💻 About Me
 
 <img align="right" alt="Coding GIF" width="360" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
 
