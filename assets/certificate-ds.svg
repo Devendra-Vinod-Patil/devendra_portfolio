@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="Data Science certificate illustration">
+  <rect width="960" height="600" fill="#07111f"/>
+  <rect x="54" y="54" width="852" height="492" rx="28" fill="#10233b" stroke="#3b82f6" stroke-width="4"/>
+  <circle cx="180" cy="180" r="32" fill="#22d3ee"/>
+  <circle cx="260" cy="310" r="32" fill="#14b8a6"/>
+  <circle cx="392" cy="210" r="32" fill="#3b82f6"/>
+  <path d="M180 180l80 130 132-100" stroke="#9fb0c8" stroke-width="8" fill="none"/>
+  <text x="480" y="235" fill="#eef6ff" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Data Science</text>
+  <text x="480" y="300" fill="#9fb0c8" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Certification</text>
+  <path d="M480 392h250" stroke="#22d3ee" stroke-width="12" stroke-linecap="round"/>
+</svg>

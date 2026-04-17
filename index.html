@@ -3,30 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Devendra Vinod Patil | Data Scientist Portfolio</title>
+    <title>Devendra Patil | Data Scientist</title>
     <meta
       name="description"
-      content="Portfolio website of Devendra Vinod Patil, Data Scientist and AI/ML Engineer from India."
+      content="Portfolio of Devendra Patil, a Data Scientist specializing in machine learning, NLP, and analytics."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
     <header class="site-header">
-      <nav class="container nav">
-        <a class="logo" href="#home">DVP</a>
-        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          <span></span><span></span><span></span>
+      <nav class="container nav" aria-label="Primary navigation">
+        <a class="logo" href="#home" aria-label="Devendra Patil home">
+          <span>DVP</span>
+          <strong>Devendra Patil</strong>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -34,167 +41,231 @@
     </header>
 
     <main id="home">
-      <section class="hero">
-        <div class="container hero-content">
-          <p class="eyebrow">India • Data Scientist | AI/ML Engineer</p>
-          <h1>Hey, I'm Devendra 👋</h1>
-          <p class="hero-tagline">Turning Data into Insights 🚀</p>
-
-          <div class="animated-line-wrapper" aria-live="polite">
-            <span class="animated-prefix">&gt;</span>
-            <span class="animated-line" id="animated-line">AI and Machine Learning Explorer</span>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Data Scientist | ML | NLP | Analytics</p>
+            <h1>Devendra Patil</h1>
+            <p class="hero-tagline">Building intelligent systems with ML, NLP &amp; data analytics</p>
+            <p class="hero-summary">
+              Fresher Data Scientist building practical projects with Python, SQL, machine
+              learning, NLP, and analytics tools.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="https://drive.google.com/drive/folders/1OGqmWIbjG2qLHpnFV6apGnOIMbjjhdvD" target="_blank" rel="noreferrer">Download Resume</a>
+            </div>
           </div>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-secondary" href="#contact">Get in Touch</a>
-          </div>
+          <aside class="hero-card reveal" aria-label="Profile card">
+            <div class="profile-photo">
+              <img src="assets/devendra-profile.png" alt="Devendra Patil" />
+            </div>
+            <div class="profile-card-copy">
+              <span>Fresher | Open to opportunities</span>
+              <h2>Data Scientist</h2>
+              <p>Machine Learning, NLP, SQL, Power BI, Python</p>
+            </div>
+          </aside>
         </div>
       </section>
 
       <section id="about" class="section">
-        <div class="container grid-two">
-          <div>
+        <div class="container split-layout">
+          <div class="section-heading reveal">
             <h2>About Me</h2>
-            <p>
-              Passionate Data Scientist focused on Machine Learning, Data Analysis, and Exploratory
-              Data Analysis (EDA).
-            </p>
-            <p>
-              Skilled in transforming raw data into actionable insights that support data-driven
-              decision-making.
-            </p>
-            <p>
-              Currently building projects and continuously exploring AI/ML technologies.
-            </p>
           </div>
-
-          <article class="code-card" aria-label="Code style profile card">
-            <pre><code>class DataScientist:
-    name = "Devendra Vinod Patil"
-    role = "Data Scientist | AI/ML Engineer"
-    skills = ["Python", "ML", "Data Analysis"]</code></pre>
-          </article>
-        </div>
-      </section>
-
-      <section id="skills" class="section alt-bg">
-        <div class="container">
-          <h2>Skills</h2>
-
-          <div class="skill-groups">
-            <article class="skill-card">
-              <h3>Programming</h3>
-              <p>Python, JavaScript, C, PHP</p>
-            </article>
-
-            <article class="skill-card">
-              <h3>AI / ML</h3>
-              <p>
-                Machine Learning, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Prompt
-                Engineering, Orange Tool
-              </p>
-            </article>
-
-            <article class="skill-card">
-              <h3>Data Visualization</h3>
-              <p>Power BI</p>
-            </article>
-
-            <article class="skill-card">
-              <h3>Databases</h3>
-              <p>MySQL, SQL, PostgreSQL</p>
-            </article>
-
-            <article class="skill-card">
-              <h3>Web</h3>
-              <p>HTML5, CSS3, JavaScript</p>
-            </article>
-
-            <article class="skill-card">
-              <h3>Tools</h3>
-              <p>Git, GitHub, VS Code, Jupyter Notebook</p>
-            </article>
+          <div class="about-content reveal">
+            <p>
+              I am Devendra Patil, a Data Scientist focused on building machine learning models
+              and data-driven applications. I have worked on projects like AI-powered resume
+              analysis and logistics optimization, processing real-world datasets and delivering
+              measurable insights. I combine Python, SQL, and analytics tools to transform raw data
+              into intelligent solutions.
+            </p>
+            <div class="fresher-note">
+              <strong>Fresher mindset:</strong>
+              <span>Curious, project-driven, quick to learn, and focused on writing practical data solutions.</span>
+            </div>
+            <div class="core-skills">
+              <span>Machine Learning</span>
+              <span>NLP</span>
+              <span>Data Analytics</span>
+              <span>SQL</span>
+              <span>Power BI</span>
+              <span>Python</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section">
+      <section id="projects" class="section section-panel">
         <div class="container">
-          <h2>Projects</h2>
+          <div class="section-heading reveal">
+            <p class="eyebrow"></p>
+            <h2>projects with real-world problem solving.</h2>
+          </div>
+
           <div class="project-grid">
-            <article class="project-card">
-              <h3>Resume Analyzer (ATS Score Predictor)</h3>
-              <ul>
-                <li>AI-based system to analyze resumes and improve ATS score.</li>
-                <li>Supports bulk resume analysis for streamlined screening.</li>
-              </ul>
+            <article class="project-card reveal">
+              <div class="project-topline">
+                <span>01</span>
+                <a href="https://github.com/Devendra-Vinod-Patil" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+              <h3>Resume Analyzer</h3>
+              <p><strong>Problem:</strong> Recruiters need a faster way to evaluate resumes for ATS alignment.</p>
+              <p><strong>Outcome:</strong> Scores resumes, detects missing keywords, and suggests improvements.</p>
+              <div class="badge-row">
+                <span>Python</span>
+                <span>NLP</span>
+                <span>Scikit-learn</span>
+              </div>
             </article>
 
-            <article class="project-card">
+            <article class="project-card reveal">
+              <div class="project-topline">
+                <span>02</span>
+                <a href="https://github.com/Devendra-Vinod-Patil" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
               <h3>Logistics Optimization System</h3>
-              <ul>
-                <li>AI-powered route optimization for perishable goods.</li>
-                <li>Suggests best route, delivery time, and storage strategy.</li>
-              </ul>
+              <p><strong>Problem:</strong> Perishable deliveries need better route and timing decisions.</p>
+              <p><strong>Outcome:</strong> Recommends routes, delivery timing, and storage strategy.</p>
+              <div class="badge-row">
+                <span>Python</span>
+                <span>ML</span>
+                <span>Analytics</span>
+              </div>
             </article>
 
-            <article class="project-card">
+            <article class="project-card reveal">
+              <div class="project-topline">
+                <span>03</span>
+                <a href="https://github.com/Devendra-Vinod-Patil" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
               <h3>Data Analysis Dashboard</h3>
-              <ul>
-                <li>Built with Power BI to surface actionable business insights.</li>
-                <li>Provides insights using interactive visuals and clear storytelling.</li>
-              </ul>
+              <p><strong>Problem:</strong> Business data is difficult to understand without visual KPIs.</p>
+              <p><strong>Outcome:</strong> Converts raw data into interactive insights and trend views.</p>
+              <div class="badge-row">
+                <span>Power BI</span>
+                <span>SQL</span>
+                <span>DAX</span>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="certifications" class="section alt-bg">
-        <div class="container grid-two">
-          <div>
-            <h2>Certifications</h2>
-            <ul class="check-list">
-              <li>Machine Learning Certification</li>
-              <li>Data Science Certification</li>
-              <li>Power BI Certification</li>
-              <li>SQL Certification</li>
-            </ul>
-          </div>
-
-          <div>
-            <h2>Achievements</h2>
-            <ul class="check-list">
-              <li>Built multiple AI/ML projects</li>
-              <li>Active GitHub contributor</li>
-              <li>Strong problem-solving in data analysis</li>
-              <li>Exploring real-world datasets deeply</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
+      <section id="skills" class="section">
         <div class="container">
-          <h2>Experience / Learning</h2>
-          <ul class="check-list">
-            <li>Learning Machine Learning Algorithms</li>
-            <li>Learning Power BI</li>
-            <li>Learning SQL</li>
-            <li>Goal: Land a Data Science / AI role</li>
-          </ul>
+          <div class="section-heading reveal">
+            <p class="eyebrow">Skills &amp; Tools</p>
+            <h2>Technical toolkit</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-group reveal">
+              <h3>Languages</h3>
+              <div class="badge-row">
+                <span><img src="assets/logo-python.svg" alt="" />Python</span>
+                <span><img src="assets/logo-js.svg" alt="" />JavaScript</span>
+                <span><img src="assets/logo-c.svg" alt="" />C</span>
+                <span><img src="assets/logo-php.svg" alt="" />PHP</span>
+              </div>
+            </article>
+            <article class="skill-group reveal">
+              <h3>ML &amp; NLP</h3>
+              <div class="badge-row">
+                <span><img src="assets/logo-sklearn.svg" alt="" />Scikit-learn</span>
+                <span><img src="assets/logo-nlp.svg" alt="" />NLP</span>
+                <span><img src="assets/logo-prompt.svg" alt="" />Prompt Engineering</span>
+                <span><img src="assets/logo-model.svg" alt="" />Model Evaluation</span>
+              </div>
+            </article>
+            <article class="skill-group reveal">
+              <h3>Data Analytics</h3>
+              <div class="badge-row">
+                <span><img src="assets/logo-pandas.svg" alt="" />Pandas</span>
+                <span><img src="assets/logo-numpy.svg" alt="" />NumPy</span>
+                <span><img src="assets/logo-eda.svg" alt="" />EDA</span>
+                <span><img src="assets/logo-stats.svg" alt="" />Statistics</span>
+              </div>
+            </article>
+            <article class="skill-group reveal">
+              <h3>Visualization &amp; BI</h3>
+              <div class="badge-row">
+                <span><img src="assets/logo-powerbi.svg" alt="" />Power BI</span>
+                <span><img src="assets/logo-chart.svg" alt="" />Matplotlib</span>
+                <span><img src="assets/logo-seaborn.svg" alt="" />Seaborn</span>
+                <span><img src="assets/logo-dax.svg" alt="" />DAX</span>
+              </div>
+            </article>
+            <article class="skill-group reveal">
+              <h3>Databases</h3>
+              <div class="badge-row">
+                <span><img src="assets/logo-sql.svg" alt="" />SQL</span>
+                <span><img src="assets/logo-mysql.svg" alt="" />MySQL</span>
+                <span><img src="assets/logo-postgres.svg" alt="" />PostgreSQL</span>
+              </div>
+            </article>
+            <article class="skill-group reveal">
+              <h3>Developer Tools</h3>
+              <div class="badge-row">
+                <span><img src="assets/logo-git.svg" alt="" />Git</span>
+                <span><img src="assets/logo-github.svg" alt="" />GitHub</span>
+                <span><img src="assets/logo-vscode.svg" alt="" />VS Code</span>
+                <span><img src="assets/logo-jupyter.svg" alt="" />Jupyter</span>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="section alt-bg">
-        <div class="container contact">
-          <h2>Contact</h2>
-          <p>Let's connect and collaborate on data-driven solutions.</p>
-          <div class="social-links">
-            <a class="btn btn-primary" href="mailto:patildevendra984@gmail.com">patildevendra984@gmail.com</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/devendra984/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="btn btn-secondary" href="https://github.com/Devendra-Vinod-Patil" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn btn-secondary" href="https://kaggle.com/devendra2004" target="_blank" rel="noreferrer">Kaggle</a>
+      <section id="certifications" class="section section-panel">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Certifications</p>
+            <h2>Learning milestones.</h2>
+          </div>
+
+          <div class="cert-grid" href="https://drive.google.com/drive/folders/1OGqmWIbjG2qLHpnFV6apGnOIMbjjhdvD">
+            <article class="cert-card reveal">
+              <img src="git\assets\nptel_datascience.png" alt="Python For Datascience" />
+              <h3>Python for Datascience</h3>
+              <p>Issuer: NPTEL- IIT Madras</p>
+              <span>2026</span>
+            </article>
+            <article class="cert-card reveal">
+              <img src="assets/certificate-ds.svg" alt="Data Science Certification preview" />
+              <h3>Data Science Certification</h3>
+              <p>Issuer: Data Science Program</p>
+              <span>2026</span>
+            </article>
+            <article class="cert-card reveal">
+              <img src="assets/certificate-pbi.svg" alt="Power BI Certification preview" />
+              <h3>Power BI Certification</h3>
+              <p>Issuer: Analytics Training</p>
+              <span>2026</span>
+            </article>
+            <article class="cert-card reveal">
+              <img src="assets/certificate-sql.svg" alt="SQL Certification preview" />
+              <h3>SQL Certification</h3>
+              <p>Issuer: Database Training</p>
+              <span>2026</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-card reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let us build something data-driven.</h2>
+          <p>Open to fresher Data Scientist, AI/ML Engineer, analytics, and dashboard opportunities.</p>
+          <div class="contact-links">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=patildevendra984@gmail.com" target="_blank" rel="noreferrer">Gmail</a>
+            <a href="https://www.linkedin.com/in/devendra984/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/Devendra-Vinod-Patil" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://drive.google.com/drive/folders/1OGqmWIbjG2qLHpnFV6apGnOIMbjjhdvD" target="_blank" rel="noreferrer">Resume PDF</a>
           </div>
         </div>
       </section>
@@ -202,8 +273,8 @@
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <p>"In God we trust; all others must bring data." — W. Edwards Deming</p>
-        <p>© <span id="year"></span> Devendra Vinod Patil</p>
+        <p>Copyright <span id="year"></span> Devendra Patil</p>
+        <p>Built with HTML, CSS, and JavaScript. No jQuery.</p>
       </div>
     </footer>
 

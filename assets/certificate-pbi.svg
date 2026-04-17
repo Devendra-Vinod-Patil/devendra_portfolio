@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="Power BI certificate illustration">
+  <rect width="960" height="600" fill="#081321"/>
+  <rect x="54" y="54" width="852" height="492" rx="28" fill="#111d2f" stroke="#14b8a6" stroke-width="4"/>
+  <rect x="150" y="300" width="72" height="120" rx="14" fill="#22d3ee"/>
+  <rect x="250" y="230" width="72" height="190" rx="14" fill="#14b8a6"/>
+  <rect x="350" y="170" width="72" height="250" rx="14" fill="#3b82f6"/>
+  <text x="500" y="238" fill="#eef6ff" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Power BI</text>
+  <text x="500" y="303" fill="#9fb0c8" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Certification</text>
+  <path d="M500 390h250" stroke="#14b8a6" stroke-width="12" stroke-linecap="round"/>
+</svg>

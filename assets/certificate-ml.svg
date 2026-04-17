@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="Machine Learning certificate illustration">
+  <rect width="960" height="600" fill="#0b1627"/>
+  <rect x="54" y="54" width="852" height="492" rx="28" fill="#101d32" stroke="#22d3ee" stroke-width="4"/>
+  <path d="M140 160h680M140 430h420" stroke="#334155" stroke-width="10" stroke-linecap="round"/>
+  <text x="140" y="245" fill="#eef6ff" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Machine Learning</text>
+  <text x="140" y="310" fill="#9fb0c8" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Certification</text>
+  <circle cx="742" cy="390" r="68" fill="#22d3ee" opacity=".95"/>
+  <path d="M706 390l24 24 50-58" fill="none" stroke="#07111f" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
