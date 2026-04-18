@@ -1,7 +1,7 @@
 # Devendra Patil Portfolio ✨
 
 <p align="center">
-	<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWxib2V5a2N1b3g0OWF0N3Bha3JqMXV6NzM0dXlnN3g2NW44b2l3dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/coxQHKASG60HrHtvkt/giphy.gif" alt="AI animation" width="680" />
+	<img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" alt="Web development animation" width="680" />
 </p>
 
 <p align="center">
@@ -17,11 +17,6 @@ Modern personal portfolio for **Devendra Patil** focused on Data Science, ML, NL
 - Responsive single-page layout 📱
 - Animated sections and custom cursor 🎯
 - Projects, skills, certifications, and contact links 🔗
-
-## Preview 🖼️
-<p align="center">
-	<img src="assets/devendra-profile.png" alt="Devendra profile" width="180" />
-</p>
 
 ## Quick Start ⚡
 1. Clone this repo
