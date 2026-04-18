@@ -18,7 +18,16 @@
   </head>
   <body>
     <div class="cursor-dot" aria-hidden="true"></div>
-    <div class="cursor-ring" aria-hidden="true"></div>
+    <svg class="cursor-ring" viewBox="0 0 120 120" aria-hidden="true">
+      <defs>
+        <path id="cursor-text-path" d="M 60,60 m -36,0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" />
+      </defs>
+      <circle class="cursor-ring-core" cx="60" cy="60" r="28" />
+      <circle class="cursor-ring-outline" cx="60" cy="60" r="44" />
+      <text class="cursor-ring-text">
+        <textPath href="#cursor-text-path" startOffset="0%">| DEVENDRA PORTFOLIO | DataScientist |AI/ML </textPath>
+      </text>
+    </svg>
     <header class="site-header">
       <nav class="container nav" aria-label="Primary navigation">
         <a class="logo" href="#home" aria-label="Devendra Patil home">
@@ -68,6 +77,30 @@
             </div>
           </aside>
         </div>
+
+        <div class="container live-panel reveal" aria-label="Live data workflow">
+          <div class="live-node">
+            <span>01</span>
+            <strong>Raw Data</strong>
+            <small>CSV, SQL, resumes</small>
+          </div>
+          <div class="live-flow" aria-hidden="true">
+            <span></span>
+          </div>
+          <div class="live-node">
+            <span>02</span>
+            <strong>ML + NLP</strong>
+            <small>clean, train, evaluate</small>
+          </div>
+          <div class="live-flow" aria-hidden="true">
+            <span></span>
+          </div>
+          <div class="live-node">
+            <span>03</span>
+            <strong>Insights</strong>
+            <small>scores, KPIs, dashboards</small>
+          </div>
+        </div>
       </section>
 
       <section id="about" class="section">
@@ -98,6 +131,68 @@
           </div>
         </div>
       </section>
+
+      <!-- <section class="section network-section" aria-label="AI network visual">
+        <div class="container">
+          <div class="network-visual reveal">
+            <img src="assets/image.png" alt="Futuristic connected AI network nodes" />
+            <span class="network-glow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="section stats-section">
+        <div class="container">
+          <div class="stats-grid">
+            <article class="stat-card reveal">
+              <div class="stat-value">
+                <span class="counter" data-target="12">0</span><span class="unit">+</span>
+              </div>
+              <p class="stat-label">Projects Built</p>
+              <p class="stat-desc">End-to-end ML, NLP, and analytics solutions</p>
+            </article>
+
+            <article class="stat-card reveal">
+              <div class="stat-value">
+                <span class="counter" data-target="5000">0</span><span class="unit">+</span>
+              </div>
+              <p class="stat-label">Lines of Code</p>
+              <p class="stat-desc">Python, SQL, JavaScript contributions</p>
+            </article>
+ -->
+            <!-- <article class="stat-card reveal">
+              <div class="stat-value">
+                <span class="counter" data-target="4">0</span>
+              </div>
+              <p class="stat-label">Certifications</p>
+              <p class="stat-desc">Continuous learning in Data Science</p>
+            </article>
+
+            <article class="stat-card reveal">
+              <div class="stat-value">
+                <span class="counter" data-target="100">0</span><span class="unit">%</span>
+              </div>
+              <p class="stat-label">Commitment</p> -->
+              <!-- <p class="stat-desc">Driven to deliver real-world value</p>
+            </article>
+          </div> -->
+
+          <!-- <div class="achievements-bar reveal">
+            <div class="achievement-item">
+              <strong>Data Processing:</strong>
+              <p>CSV, SQL, APIs, real-time datasets</p>
+            </div>
+            <div class="achievement-item">
+              <strong>Model Deployment:</strong>
+              <p>Evaluation, optimization, production-ready systems</p>
+            </div>
+            <div class="achievement-item">
+              <strong>Business Impact:</strong>
+              <p>Resume scoring, route optimization, BI dashboards</p>
+            </div>
+          </div>
+        </div>
+      </section> --> 
 
       <section id="projects" class="section section-panel">
         <div class="container">
@@ -158,15 +253,15 @@
       <section id="skills" class="section">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">Skills &amp; Tools</p>
-            <h2>Technical toolkit</h2>
+            <p class="eyebrow">  </p>
+            <h2>Skills and Tools</h2>
           </div>
 
           <div class="skills-grid">
             <article class="skill-group reveal">
               <h3>Languages</h3>
               <div class="badge-row">
-                <span><img src="assets/logo-python.svg" alt="" />Python</span>
+                <span><img src="assets/logo-python.png" alt="" />Python</span>
                 <span><img src="assets/logo-js.svg" alt="" />JavaScript</span>
                 <span><img src="assets/logo-c.svg" alt="" />C</span>
                 <span><img src="assets/logo-php.svg" alt="" />PHP</span>
@@ -175,7 +270,7 @@
             <article class="skill-group reveal">
               <h3>ML &amp; NLP</h3>
               <div class="badge-row">
-                <span><img src="assets/logo-sklearn.svg" alt="" />Scikit-learn</span>
+                <span><img src="assets/logo-sklearn.png" alt="" />Scikit-learn</span>
                 <span><img src="assets/logo-nlp.svg" alt="" />NLP</span>
                 <span><img src="assets/logo-prompt.svg" alt="" />Prompt Engineering</span>
                 <span><img src="assets/logo-model.svg" alt="" />Model Evaluation</span>
@@ -185,17 +280,17 @@
               <h3>Data Analytics</h3>
               <div class="badge-row">
                 <span><img src="assets/logo-pandas.svg" alt="" />Pandas</span>
-                <span><img src="assets/logo-numpy.svg" alt="" />NumPy</span>
+                <span><img src="assets/logo-numpy1.svg" alt="" />NumPy</span>
                 <span><img src="assets/logo-eda.svg" alt="" />EDA</span>
-                <span><img src="assets/logo-stats.svg" alt="" />Statistics</span>
+                <span><img src="assets/logo-stat.png" alt="" />Statistics</span>
               </div>
             </article>
             <article class="skill-group reveal">
               <h3>Visualization &amp; BI</h3>
               <div class="badge-row">
                 <span><img src="assets/logo-powerbi.svg" alt="" />Power BI</span>
-                <span><img src="assets/logo-chart.svg" alt="" />Matplotlib</span>
-                <span><img src="assets/logo-seaborn.svg" alt="" />Seaborn</span>
+                <span><img src="assets/logo-mat.png" alt="" />Matplotlib</span>
+                <span><img src="assets/logo-seaborn.png" alt="" />Seaborn</span>
                 <span><img src="assets/logo-dax.svg" alt="" />DAX</span>
               </div>
             </article>
@@ -203,8 +298,8 @@
               <h3>Databases</h3>
               <div class="badge-row">
                 <span><img src="assets/logo-sql.svg" alt="" />SQL</span>
-                <span><img src="assets/logo-mysql.svg" alt="" />MySQL</span>
-                <span><img src="assets/logo-postgres.svg" alt="" />PostgreSQL</span>
+                <span><img src="assets/mysql-svgrepo-com.svg" alt="" />MySQL</span>
+                <span><img src="assets/postgresql-svgrepo-com.svg" alt="" />PostgreSQL</span>
               </div>
             </article>
             <article class="skill-group reveal">
@@ -213,7 +308,7 @@
                 <span><img src="assets/logo-git.svg" alt="" />Git</span>
                 <span><img src="assets/logo-github.svg" alt="" />GitHub</span>
                 <span><img src="assets/logo-vscode.svg" alt="" />VS Code</span>
-                <span><img src="assets/logo-jupyter.svg" alt="" />Jupyter</span>
+                <span><img src="assets/jupyter.pnggit " alt="" />Jupyter</span>
               </div>
             </article>
           </div>
@@ -227,31 +322,43 @@
             <h2>Learning milestones.</h2>
           </div>
 
-          <div class="cert-grid" href="https://drive.google.com/drive/folders/1OGqmWIbjG2qLHpnFV6apGnOIMbjjhdvD">
+          <div class="cert-grid">
             <article class="cert-card reveal">
-              <img src="git\assets\nptel_datascience.png" alt="Python For Datascience" />
+              <img src="assets\nptel_datascience.png" alt="Python For Datascience" />
               <h3>Python for Datascience</h3>
               <p>Issuer: NPTEL- IIT Madras</p>
-              <span>2026</span>
+              <div class="cert-card-footer">
+                <span>2026</span>
+                <a class="cert-btn" href="https://drive.google.com/drive/folders/1OGqmWIbjG2qLHpnFV6apGnOIMbjjhdvD" target="_blank" rel="noreferrer">View</a>
+              </div>
             </article>
             <article class="cert-card reveal">
-              <img src="assets/certificate-ds.svg" alt="Data Science Certification preview" />
-              <h3>Data Science Certification</h3>
-              <p>Issuer: Data Science Program</p>
-              <span>2026</span>
+              <img src="assets/code_unnati.png" alt="code unnati foundation course" />
+              <h3>Code Unnati Foundation Course</h3>
+              <p>Issuer: edunet</p>
+              <div class="cert-card-footer">
+                <span>2025</span>
+                <a class="cert-btn" href="https://drive.google.com/file/d/1NsTqNDYphHILzh4YkKGjaq60UzAeLSGH/view?usp=drive_link" target="_blank" rel="noreferrer">View</a>
+              </div>
             </article>
             <article class="cert-card reveal">
-              <img src="assets/certificate-pbi.svg" alt="Power BI Certification preview" />
-              <h3>Power BI Certification</h3>
-              <p>Issuer: Analytics Training</p>
-              <span>2026</span>
+              <img src="assets/java.png" alt="Programming using Java preview" />
+              <h3>Programming using Java</h3>
+              <p>Issuer: infosys springboard</p>
+              <div class="cert-card-footer">
+                <span>2025</span>
+                <a class="cert-btn" href="https://drive.google.com/file/d/1xc75o7IOcqysKTRwfYPFPul_MLI5HZdu/view?usp=sharing" target="_blank" rel="noreferrer">View</a>
+              </div>
             </article>
-            <article class="cert-card reveal">
+            <!-- <article class="cert-card reveal">
               <img src="assets/certificate-sql.svg" alt="SQL Certification preview" />
               <h3>SQL Certification</h3>
               <p>Issuer: Database Training</p>
-              <span>2026</span>
-            </article>
+              <div class="cert-card-footer">
+                <span>2026</span>
+                <a class="cert-btn" href="https://drive.google.com/drive/folders/1OGqmWIbjG2qLHpnFV6apGnOIMbjjhdvD" target="_blank" rel="noreferrer">View</a>
+              </div>
+            </article> -->
           </div>
         </div>
       </section>
@@ -265,7 +372,7 @@
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=patildevendra984@gmail.com" target="_blank" rel="noreferrer">Gmail</a>
             <a href="https://www.linkedin.com/in/devendra984/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="https://github.com/Devendra-Vinod-Patil" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://drive.google.com/drive/folders/1OGqmWIbjG2qLHpnFV6apGnOIMbjjhdvD" target="_blank" rel="noreferrer">Resume PDF</a>
+            <a href="https://drive.google.com/file/d/1axH2HiKf-1ac1Lb56Pnz57NJJ3i9gFXV/view?usp=drive_link" target="_blank" rel="noreferrer">Resume PDF</a>
           </div>
         </div>
       </section>
@@ -274,7 +381,7 @@
     <footer class="site-footer">
       <div class="container footer-content">
         <p>Copyright <span id="year"></span> Devendra Patil</p>
-        <p>Built with HTML, CSS, and JavaScript. No jQuery.</p>
+        <p>Built with HTML, CSS, and JavaScript.</p>
       </div>
     </footer>
 
