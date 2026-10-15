@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeAI Case Study — Devendra Vinod Patil | AI/ML Portfolio</title>
+    <meta name="description"
+        content="Technical case study of ResumeAI: Full-Stack AI Career Platform with ATS Resume Builder, Cover Letter Generator, and Mock Interviewer by Devendra Vinod Patil.">
+    <meta property="og:title" content="ResumeAI Case Study — Devendra Vinod Patil | AI/ML Portfolio">
+    <meta property="og:description" content="AI-powered resume optimization, ATS scoring, and keyword analysis engine.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/myimage.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="author" content="Devendra Vinod Patil">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="nav-inner">
+            <a href="index.html" class="logo"><span class="star">&#10022;</span> DEVENDRA</a>
+            <nav class="primary-nav" aria-label="Primary">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="nav-active">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE OVERLAY MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mm-close" id="mmClose" aria-label="Close menu">&times;</button>
+        <a href="index.html" class="mm-link">Home</a>
+        <a href="about.html" class="mm-link">About</a>
+        <a href="projects.html" class="mm-link">Projects</a>
+        <a href="experience.html" class="mm-link">Experience</a>
+        <a href="achievements.html" class="mm-link">Achievements</a>
+        <a href="contact.html" class="mm-link">Contact</a>
+    </div>
+
+    <main id="top">
+
+        <!-- CASE STUDY HERO -->
+        <section class="case-study-hero">
+            <div class="container">
+                <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a> &gt; <a href="projects.html">Projects</a> &gt; <span>ResumeAI</span>
+                </nav>
+
+                <span class="hero-eyebrow">AICTE | IBM SkillsBuild Gen AI &amp; Cloud Computing Internship &bull; BharatCares</span>
+                <h1 style="font-size:clamp(2.3rem, 4.5vw, 3.8rem); margin-bottom:12px;">ResumeAI: Smart Career Studio</h1>
+                <p class="page-hero-sub">
+                    A unified full-stack Generative AI career studio combining dual-LLM routing (Google Gemini &amp; OpenAI ChatGPT), real-time ATS semantic compatibility scoring, automated cover letter drafting, timed aptitude assessments, and adaptive proctored mock technical interviews.
+                </p>
+
+                <!-- Meta Details Bar -->
+                <div class="cs-meta-bar">
+                    <div class="cs-meta-item">
+                        <span class="label">Project Domain</span>
+                        <span class="value">Applied GenAI, NLP &amp; Career Tech</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Program &amp; Team</span>
+                        <span class="value">IBM SkillsBuild &bull; ALPHA BOY'S (ID: IBMBH03605)</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Team Leader</span>
+                        <span class="value">Patil Devendra Vinod (C.K. Pithawala College of Engg. &amp; Tech.)</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Architecture</span>
+                        <span class="value">Flask 3.0.3, SQLite3 (mysql_store proxy), Gemini &amp; ChatGPT</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Live Application</span>
+                        <span class="value"><a href="https://ai-resume-analyzer-and-ai-interview.onrender.com/" target="_blank" rel="noopener" style="text-decoration:underline;">Render Cloud App &#8599;</a></span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Project Report</span>
+                        <span class="value"><a href="docs/ResumeAI_Project_Report.pdf" download="ResumeAI_Project_Report.pdf" style="text-decoration:underline; font-weight:700;">Download Report (PDF) &darr;</a></span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Code Repository</span>
+                        <span class="value"><a href="https://github.com/Devendra-Vinod-Patil/ai_resume_analyzer_and_ai_interview/tree/main/static" target="_blank" rel="noopener" style="text-decoration:underline;">GitHub Repository &#8599;</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN CASE STUDY LAYOUT -->
+        <div class="container">
+            <div class="cs-layout">
+
+                <!-- MAIN ARTICLE CONTENT -->
+                <article class="cs-main">
+
+                    <!-- TOP PERFORMANCE METRICS GRID -->
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-val" style="color:var(--pink-deep);">Dual-LLM</div>
+                            <div class="metric-label">Routing Architecture</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val">7 Modules</div>
+                            <div class="metric-label">Unified Career Studio</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val">4-Tier</div>
+                            <div class="metric-label">Failover AI Provider Pool</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val">10 Tables</div>
+                            <div class="metric-label">Relational Schema (Cascade)</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val">20 Min</div>
+                            <div class="metric-label">Timed Aptitude Screening</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val">~35 Min</div>
+                            <div class="metric-label">Proctored Mock Interview</div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 1: PROBLEM STATEMENT & VALUE PROPOSITION -->
+                    <section id="problem-statement" style="padding:0; margin-bottom:48px;">
+                        <h2>1. The Compounding Hiring Problem &amp; Solution</h2>
+                        <p>
+                            Job seekers in today's automated hiring landscape face two compounding challenges that severely harm their career mobility:
+                        </p>
+                        <ul>
+                            <li><strong>The ATS Rejection Bottleneck:</strong> Qualified candidates are silently rejected by Applicant Tracking Systems (ATS) due to non-standard resume layouts, un-parseable multi-column formats, or missing contextual keywords&mdash;frequently before a human recruiter ever sees their credentials.</li>
+                            <li><strong>The Fragmented Workflow Problem:</strong> Career preparation tools are completely siloed. A candidate drafts a resume on one site, writes a cover letter on another, takes practice tests on a third, and rehearses interviews on a fourth&mdash;with zero shared profile context across any of them.</li>
+                        </ul>
+                        <p>
+                            <strong>The ResumeAI Solution:</strong> <em>ResumeAI &mdash; Smart Career Studio</em> solves both problems by consolidating every stage of job preparation into a single authenticated workspace. The platform carries the candidate's profile context from interactive resume drafting and AI bullet enhancement, through semantic ATS compatibility scoring and automated cover letter generation, directly into a timed aptitude screening round and a fully adaptive, proctored AI mock interview.
+                        </p>
+
+                        <div class="card" style="margin:24px 0; background:var(--yellow); border-radius:12px; padding:20px; border:2px solid var(--ink); box-shadow:var(--shadow-flat-sm);">
+                            <strong>The Complete Candidate Journey in One Session:</strong>
+                            <p style="margin-top:8px; font-size:0.95rem; line-height:1.6;">
+                                A university graduate targeting a <em>"Python Developer"</em> or <em>"Data Scientist"</em> role can build an ATS-friendly resume in the split-screen builder, enhance weak bullet points with metric-driven phrasing, evaluate their semantic compatibility score against a real job description, generate a tailored cover letter for their target employer, complete a 20-question timed aptitude assessment, and sit a ~35-minute adaptive AI mock technical interview&mdash;all within a single session without switching tools.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 2: 7 CORE FEATURE MODULES -->
+                    <section id="core-modules" style="padding:0; margin-bottom:48px;">
+                        <h2>2. Core Functional Modules &amp; Platform Capabilities</h2>
+                        <p>
+                            ResumeAI provides a comprehensive, authenticated platform supporting both candidate preparation and recruiter evaluation:
+                        </p>
+
+                        <div class="cs-table-wrap">
+                            <table class="cs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Module</th>
+                                        <th>Core Capabilities &amp; Technical Implementation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>User Authentication &amp; My Career Space</strong></td>
+                                        <td>Secure user registration and login with 30-day persistent sessions (<code>pbkdf2:sha256</code> password hashing, SHA-256 session tokens); saves resume drafts, job application tracking records, and historical interview dossiers.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Live Split-Screen Resume Builder</strong></td>
+                                        <td>Categorized input tabs (Basics, Summary, Experience, Education, Skills) with dynamic word counter and section completion progress tracking on the left; live white-canvas document preview, custom accent colors, selectable ATS templates, and 1-click PDF export via custom <code>@page</code> print CSS on the right.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Dual-Mode AI Assistant</strong></td>
+                                        <td><strong>Career Intake Coach:</strong> Conversational chat that organically extracts user achievements and structures skills into professional competencies. <strong>Bullet Enhancer:</strong> Single-turn transformation converting rough draft bullets into metric-driven, impact-focused achievements with 1-click copy.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Contextual ATS Analyzer</strong></td>
+                                        <td>Upload resume PDF (up to 5 MB via <code>pypdf</code>/<code>pymupdf</code>) alongside a pasted job description; returns a semantic Compatibility Score (%) with a structured <em>Matched Skills</em> vs. <em>Missing Skills</em> breakdown powered by ChatGPT NLP.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Automated Cover Letter Generator</strong></td>
+                                        <td>Synthesizes candidate experience against a specified company name and target role into a professionally formatted, editable cover letter draft directly in an adjacent text workspace.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Aptitude Quiz Simulator (Stage 1)</strong></td>
+                                        <td>20 randomized multiple-choice questions on selected domains under a strict 20-minute countdown; includes local answer autosave, forced auto-submit on time expiry, and anti-cheat tab-refresh warnings.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Adaptive AI Mock Interview (Stage 2)</strong></td>
+                                        <td>~35-minute conversational technical and behavioral interview driven by <code>gemini-3.5-flash</code> acting as the hiring manager. Dynamically adapts questions to the candidate's profile and ATS score, grades answers turn-by-turn (0&ndash;100 score + missing concepts + feedback), and runs background proctoring logging window-blur and tab-switch events.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Personalized Learning Roadmap &amp; Matcher</strong></td>
+                                        <td>Compares quiz and interview results against role benchmarks; outputs a 4-week study plan with curated free-course links (Harvard CS50, MIT OCW) and profile-matched direct search links to LinkedIn, Indeed, and Naukri.</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td><strong>Recruiter &amp; HR Admin Console</strong></td>
+                                        <td>Review proctored assessment reports, ATS compatibility scores, aptitude results, candidate integrity status, and AI-generated qualitative hiring summaries per applicant.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 3: DUAL-LLM ROUTING & FALLBACK ARCHITECTURE -->
+                    <section id="ai-routing" style="padding:0; margin-bottom:48px;">
+                        <h2>3. Dual-LLM Routing &amp; 4-Tier Fallback Architecture</h2>
+                        <p>
+                            Rather than routing all calls through a single generic model, ResumeAI implements a deliberate <strong>dual-LLM routing architecture</strong> that matches each task to the provider whose strengths best suit its specific latency, cost, and semantic reasoning profile:
+                        </p>
+
+                        <div class="cs-table-wrap">
+                            <table class="cs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Module</th>
+                                        <th>Selected Provider</th>
+                                        <th>Technical Rationale</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td><strong>Career Intake Coach</strong></td>
+                                        <td>Google Gemini (<code>gemini-3.5-flash</code>)</td>
+                                        <td>Sub-second latency and conversational fluidity are critical for multi-turn chats that map background organically.</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td><strong>Bullet Enhancer</strong></td>
+                                        <td>Google Gemini (<code>gemini-3.5-flash</code>)</td>
+                                        <td>Rapid single-turn text transformation; high inference speed keeps the live copy-edit loop instantaneous.</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td><strong>Adaptive AI Mock Interview</strong></td>
+                                        <td>Google Gemini (<code>gemini-3.5-flash</code>)</td>
+                                        <td>Dynamically adapts behavioral and technical questions turn-by-turn under an active pacing timer without lag.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Contextual ATS Analyzer</strong></td>
+                                        <td>OpenAI ChatGPT / OpenRouter</td>
+                                        <td>Deep semantic reasoning and precision in comparing resume text against job description specs to identify exact missing skills.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Cover Letter Generator</strong></td>
+                                        <td>OpenAI ChatGPT / OpenRouter</td>
+                                        <td>Strict professional formatting, structural adherence, and formal business tone required for external employer documents.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>4-Tier Automatic AI Failover Chain</h3>
+                        <p>
+                            To prevent downtime caused by upstream rate limits or billing threshold caps, every inference call executes through a prioritized failover chain:
+                        </p>
+                        <div class="architecture-diagram">
+                            <div class="diagram-step">
+                                <span class="step-num">1</span>
+                                <div><strong>Tier 1 (Primary):</strong> Local OpenAI API key credentials for semantic NLP scoring and cover letters.</div>
+                            </div>
+                            <div class="diagram-step">
+                                <span class="step-num">2</span>
+                                <div><strong>Tier 2 (Conversational):</strong> Local Gemini API key credentials (targeting <code>gemini-3.5-flash</code>) for real-time turn-by-turn dialog.</div>
+                            </div>
+                            <div class="diagram-step">
+                                <span class="step-num">3</span>
+                                <div><strong>Tier 3 (External Gateway):</strong> OpenRouter gateway failover routing automatically to GPT-4o-mini, Anthropic Claude, or Groq when primary keys encounter 402/404/rate limits.</div>
+                            </div>
+                            <div class="diagram-step">
+                                <span class="step-num">4</span>
+                                <div><strong>Tier 4 (Edge Fallback):</strong> Groq / xAI developer keys for high-throughput resilience.</div>
+                            </div>
+                        </div>
+
+                        <h3>Prompting &amp; Token Budgeting Strategy</h3>
+                        <p>
+                            Prompts are strictly architected into isolated <em>system instruction + candidate message context pairs</em>. Output contracts mandate structured JSON: numerical scores (0&ndash;100), explicit lists of missing competencies, and concise diagnostic feedback. Furthermore, an explicit <code>max_tokens: 1000</code> cap is enforced across all endpoints to prevent unbounded token consumption and eliminate 402 billing errors.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 4: SYSTEM ARCHITECTURE & DATABASE DESIGN -->
+                    <section id="architecture" style="padding:0; margin-bottom:48px;">
+                        <h2>4. System Architecture &amp; Database Design</h2>
+                        <p>
+                            ResumeAI follows a clean three-tier architecture: a lightweight Flask server mediates between the client browser, an embedded SQLite relational database, and the dual-LLM provider pool:
+                        </p>
+
+                        <div class="cs-table-wrap">
+                            <table class="cs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Layer</th>
+                                        <th>Technology</th>
+                                        <th>Architectural Role &amp; Rationale</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Programming Language</strong></td>
+                                        <td>Python 3.11</td>
+                                        <td>Rich standard library, native AI SDKs, and efficient PDF text extraction middleware.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Web Framework</strong></td>
+                                        <td>Flask 3.0.3</td>
+                                        <td>Lightweight, route-based, minimal runtime footprint with no heavy compilation pipeline.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Frontend UI</strong></td>
+                                        <td>HTML5, Vanilla CSS3, JavaScript</td>
+                                        <td>Dark glassmorphism aesthetic (neon purple &amp; teal accents); asynchronous <code>fetch()</code> requests enable live resume preview without page reloads.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Database &amp; Adapter</strong></td>
+                                        <td>SQLite3 with <code>mysql_store.py</code> proxy</td>
+                                        <td>10-table schema with cascade deletes. The custom <code>mysql_store.py</code> emulation layer lets all routes use MySQL-compatible syntax, enabling future migration to hosted MySQL/PostgreSQL with zero route rewrites.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>PDF Processing</strong></td>
+                                        <td><code>pypdf</code> / <code>pymupdf</code></td>
+                                        <td>Robust text extraction from candidate resume PDFs up to 5 MB for ATS parsing.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Production Server</strong></td>
+                                        <td>Gunicorn WSGI on Render</td>
+                                        <td>High-performance multi-worker WSGI server managing concurrent threads on Linux deployment containers.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>10 Relational Database Tables (`resumeai.db`)</h3>
+                        <div class="cs-table-wrap">
+                            <table class="cs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Table Name</th>
+                                        <th>Key Schema Fields &amp; Constraints</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>users</code></td>
+                                        <td><code>id, full_name, email (UNIQUE), password_hash (pbkdf2:sha256), created_at, last_login_at</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>user_sessions</code></td>
+                                        <td><code>id, user_id (FK &rarr; users, CASCADE), token_hash (SHA-256, UNIQUE), expires_at, created_at</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>resumes</code></td>
+                                        <td><code>id, filename, content (full extracted text), created_at</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>candidates</code></td>
+                                        <td><code>id, name, email (UNIQUE), phone, created_at</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>interview_sessions</code></td>
+                                        <td><code>id (UUID PK), candidate_id (FK), resume_id (FK), job_role, resume_score, status CHECK('started'|'completed'|'terminated'), duration_minutes, created_at, completed_at</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>technical_answers</code></td>
+                                        <td><code>id, session_id (FK, CASCADE), question_text, candidate_answer, score CHECK(0&ndash;100), feedback, created_at</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>aptitude_answers</code></td>
+                                        <td><code>id, session_id (FK, CASCADE), question_text, candidate_answer, is_correct BOOLEAN(0/1), created_at</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>proctoring_logs</code></td>
+                                        <td><code>id, session_id (FK, CASCADE), event_type, timestamp, details</code> (logs tab-switch &amp; window-blur events)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>final_reports</code></td>
+                                        <td><code>id, session_id (FK UNIQUE, CASCADE), score CHECK(0&ndash;100), summary, technical_rating, communication_rating, created_at</code></td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td><code>learning_roadmaps</code></td>
+                                        <td><code>id, session_id (FK UNIQUE, CASCADE), plan_json</code> (4-week tailored curriculum with curated links)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Core REST API Endpoints</h3>
+                        <div class="cs-table-wrap">
+                            <table class="cs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Endpoint</th>
+                                        <th>Method</th>
+                                        <th>Function &amp; Payload Handling</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>/api/auth/register</code></td>
+                                        <td><code>POST</code></td>
+                                        <td>Register new candidate account; validates email uniqueness and password length.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/api/auth/login</code></td>
+                                        <td><code>POST</code></td>
+                                        <td>Authenticate user credentials and issue 30-day persistent session cookie.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/api/ats-score</code></td>
+                                        <td><code>POST</code></td>
+                                        <td>Upload resume PDF + paste job description; returns semantic Compatibility Score.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/api/start-technical-interview</code></td>
+                                        <td><code>POST</code></td>
+                                        <td>Create interview UUID and generate role-tailored questions via Gemini.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/api/submit-technical-answer</code></td>
+                                        <td><code>POST</code></td>
+                                        <td>Grade answer (0&ndash;100) with diagnostic feedback; persists to <code>technical_answers</code>.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/api/cover-letter</code></td>
+                                        <td><code>POST</code></td>
+                                        <td>Generate formatted cover letter draft contextualized to company &amp; target role.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/admin</code></td>
+                                        <td><code>GET</code></td>
+                                        <td>Recruiter console: view candidate dossiers, proctoring violation logs, and AI summaries.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 5: 6-PHASE DEVELOPMENT LIFECYCLE -->
+                    <section id="development-phases" style="padding:0; margin-bottom:48px;">
+                        <h2>5. 6-Phase Development Lifecycle</h2>
+                        <p>
+                            The platform was engineered using a modular, test-driven sequencing model:
+                        </p>
+
+                        <div class="cs-table-wrap">
+                            <table class="cs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Phase</th>
+                                        <th>Focus Area</th>
+                                        <th>Key Activities &amp; Delivered Artifacts</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Phase 1: Spec &amp; Scoping</strong></td>
+                                        <td>Requirements Definition</td>
+                                        <td>User stories, dual-LLM routing strategy, 10-table ER diagram, API endpoint specification.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Phase 2: Database &amp; Auth</strong></td>
+                                        <td>Persistence &amp; Security</td>
+                                        <td>10-table schema with cascade deletes, <code>pbkdf2:sha256</code> password hashing, <code>mysql_store.py</code> proxy.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Phase 3: Frontend Modules</strong></td>
+                                        <td>Dark Glassmorphic UI</td>
+                                        <td>Split-screen resume builder, ATS analyzer form, timed quiz countdown, AI chat, recruiter console.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Phase 4: Backend &amp; LLM Pool</strong></td>
+                                        <td>API &amp; Failover Routing</td>
+                                        <td>REST endpoints for auth, ATS scoring, interview grading, and 4-tier provider fallback pool.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Phase 5: E2E Testing</strong></td>
+                                        <td>Full-Stack Validation</td>
+                                        <td>End-to-end user journey testing (Register &rarr; ATS &rarr; Quiz &rarr; Interview), proctoring event checks, API bug fixes.</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td><strong>Phase 6: Cloud Deployment</strong></td>
+                                        <td>Render Production Hosting</td>
+                                        <td>Gunicorn WSGI configuration, SQLite startup bootstrap on ephemeral disks, environment secrets management.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 6: TECHNICAL CHALLENGES & HOW THEY WERE RESOLVED -->
+                    <section id="challenges" style="padding:0; margin-bottom:48px;">
+                        <h2>6. Technical Challenges &amp; Production Solutions</h2>
+                        <div class="cs-table-wrap">
+                            <table class="cs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Challenge Encountered</th>
+                                        <th>Root Cause</th>
+                                        <th>Engineering Solution Applied</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>API 404 &mdash; Deprecated Model Endpoint</strong></td>
+                                        <td>Google deprecated the legacy <code>gemini-1.5-flash</code> endpoint, returning 404 errors across conversational routes.</td>
+                                        <td>Updated active model identifier to <code>gemini-3.5-flash</code> in central configuration; verified with automated health check before redeployment.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Render Ephemeral Disk SQLite Reset</strong></td>
+                                        <td>Render Free Tier cloud containers wipe disk storage on every restart, erasing local database records.</td>
+                                        <td>Implemented a directory-creator bootstrap routine in the SQLite connector to reinitialize schema on startup; documented volume attachment for production.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>OpenRouter 402 &mdash; Credit Exhaustion</strong></td>
+                                        <td>Unbounded API request payloads consumed excessive prompt tokens, triggering 402 billing blocks.</td>
+                                        <td>Enforced an explicit <code>max_tokens: 1000</code> cap across all request payloads and refined prompt instructions for concise outputs.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Windows Terminal Unicode Crash</strong></td>
+                                        <td>Unicode checkmark characters (<code>&#10004;</code>) in test log strings caused encoding crashes on CodePage 1252 terminals.</td>
+                                        <td>Sanitized all server-side test logs to strictly ASCII-safe markers (<code>[OK]</code>, <code>[FAIL]</code>), confining unicode to UI layers.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>PDF Resume Export Formatting Discrepancies</strong></td>
+                                        <td>HTML/CSS preview rendered properly on screen but broke page margins and line heights when using browser print dialogs.</td>
+                                        <td>Engineered a dedicated print stylesheet with explicit <code>@page</code> rules, millimeter margins, and controlled page-break CSS properties for exact 1:1 fidelity.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 7: KEY LEARNINGS & REFLECTIONS -->
+                    <section id="learnings" style="padding:0; margin-bottom:48px;">
+                        <h2>7. Key Engineering Learnings &amp; Takeaways</h2>
+                        <ul>
+                            <li><strong>Dual-LLM Routing Maximizes Price-Performance:</strong> Pairing Gemini for low-latency conversational dialog and ChatGPT for high-precision semantic scoring achieved superior user experience without inflating API costs.</li>
+                            <li><strong>Database Adapter Decoupling Pays Immediate Dividends:</strong> The <code>mysql_store.py</code> proxy layer allows the application to transition from embedded SQLite to hosted cloud PostgreSQL/MySQL with zero route changes.</li>
+                            <li><strong>Threading Candidate Profile Context Across Stateless Calls:</strong> Passing extracted resume data and target role definitions into every subsequent prompt (ATS, cover letter, mock interview) created a cohesive, personalized experience.</li>
+                            <li><strong>Token Budgeting is a Reliability Prerequisite:</strong> Setting explicit token ceilings on prompts is essential to prevent unexpected 402 billing errors and silent feature failures.</li>
+                            <li><strong>Lightweight Browser Focus APIs Provide Effective Proctoring:</strong> Monitoring window-blur and tab-switch events on the client gave recruiters actionable integrity data with near-zero backend overhead.</li>
+                        </ul>
+                    </section>
+
+                    <!-- SECTION 8: REPOSITORY & ARTIFACT LINKS -->
+                    <section id="links" style="padding:0; margin-bottom:48px;">
+                        <h2>8. Project Artifacts &amp; Live Links</h2>
+                        <div class="hero-ctas" style="margin-top:20px; flex-wrap:wrap; gap:14px;">
+                            <a href="https://ai-resume-analyzer-and-ai-interview.onrender.com/" target="_blank" rel="noopener" class="btn btn-solid">&#128640; Launch Live Web Application &#8599;</a>
+                            <a href="https://github.com/Devendra-Vinod-Patil/ai_resume_analyzer_and_ai_interview/tree/main/static" target="_blank" rel="noopener" class="btn btn-ghost">&#128187; GitHub Repository &#8599;</a>
+                            <a href="projects.html" class="btn btn-ghost">&larr; Back to All Projects</a>
+                        </div>
+                    </section>
+
+                </article>
+
+                <!-- STICKY SIDEBAR -->
+                <aside class="cs-sidebar">
+                    <div class="cs-side-box">
+                        <h4>Table of Contents</h4>
+                        <nav class="cs-toc-list" aria-label="Case Study Sections">
+                            <a href="#problem-statement">1. Problem &amp; Value Prop</a>
+                            <a href="#core-modules">2. 7 Core Feature Modules</a>
+                            <a href="#ai-routing">3. Dual-LLM Routing &amp; Pool</a>
+                            <a href="#architecture">4. Stack &amp; Database Design</a>
+                            <a href="#development-phases">5. 6-Phase Lifecycle</a>
+                            <a href="#challenges">6. Production Challenges</a>
+                            <a href="#learnings">7. Key Learnings</a>
+                            <a href="#links">8. Artifacts &amp; Live Links</a>
+                        </nav>
+                    </div>
+
+                    <div class="cs-side-box" style="background:var(--lavender);">
+                        <h4>Project Credentials</h4>
+                        <p style="font-size:0.88rem; line-height:1.55; margin-bottom:14px;">
+                            <strong>AICTE &bull; IBM SkillsBuild &bull; BharatCares</strong><br>
+                            Team: ALPHA BOY'S (IBMBH03605)<br>
+                            Leader: Patil Devendra Vinod<br>
+                            College: CKPCET, Surat
+                        </p>
+                        <a href="https://ai-resume-analyzer-and-ai-interview.onrender.com/" target="_blank" rel="noopener" class="btn btn-sm btn-solid" style="width:100%; justify-content:center; margin-bottom:8px;">Live Web App &#8599;</a>
+                        <a href="docs/ResumeAI_Project_Report.pdf" download="ResumeAI_Project_Report.pdf" class="btn btn-sm btn-ghost" style="width:100%; justify-content:center; margin-bottom:8px; background:#FFF;">Download Report (PDF) &darr;</a>
+                        <a href="contact.html" class="btn btn-sm btn-ghost" style="width:100%; justify-content:center; background:#FFF;">Discuss this Project &rarr;</a>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand & Introduction -->
+                <div class="footer-col footer-brand-col">
+                    <a href="index.html" class="logo footer-logo" aria-label="Devendra Patil Homepage">
+                        <span class="star">&#10022;</span> DEVENDRA
+                    </a>
+                    <p class="footer-tagline">
+                        Building practical AI/ML solutions and data-driven applications through Python, machine learning, and continuous learning.
+                    </p>
+                    <div class="footer-social-pills" aria-label="Social profiles">
+                        <a href="https://github.com/Devendra-Vinod-Patil" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="GitHub Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/devendra984" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:patildevendra984@gmail.com" class="footer-social-btn" aria-label="Send Email">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Navigation -->
+                <div class="footer-col footer-nav-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links-grid">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact & Professional Details -->
+                <div class="footer-col footer-contact-col">
+                    <h3 class="footer-heading">Let&rsquo;s Connect</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <a href="mailto:patildevendra984@gmail.com" class="footer-contact-link">patildevendra984@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Surat, Gujarat, India</span>
+                        </li>
+                        <li>
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                            <span>B.E. Information Technology</span>
+                        </li>
+                        <li class="footer-resume-item">
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="12" y2="18"></line><line x1="15" y1="15" x2="12" y2="18"></line></svg>
+                            <a href="Devendra_Vinod_Patil_Resume.pdf" download="Devendra_Vinod_Patil_Resume.pdf" class="footer-contact-link footer-resume-link">
+                                Download Resume (PDF) &darr;
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="footer-bottom-bar">
+                <span class="footer-copy">&copy; 2026 Devendra Vinod Patil. All rights reserved.</span>
+                <span class="footer-craft">Designed &amp; built with care.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Dialog Component -->
+    <dialog id="certModal">
+        <div class="lightbox-content">
+            <div class="lightbox-header">
+                <span class="lightbox-title" id="certModalTitle">Preview</span>
+                <button class="lightbox-close-btn" id="certModalClose" aria-label="Close dialog">&times;</button>
+            </div>
+            <img class="lightbox-img" id="certModalImg" src="" alt="Full view">
+            <p class="lightbox-caption" id="certModalCaption"></p>
+        </div>
+    </dialog>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

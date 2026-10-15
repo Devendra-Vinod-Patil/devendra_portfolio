@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Chikitsa Case Study — Devendra Vinod Patil | AI/ML Portfolio</title>
+    <meta name="description"
+        content="Technical case study of Virtual Chikitsa: Web-based Telemedicine Platform with online doctor consultations, digital prescriptions, and role-based workflows.">
+    <meta property="og:title" content="Virtual Chikitsa Case Study — Devendra Vinod Patil | AI/ML Portfolio">
+    <meta property="og:description" content="Healthcare accessibility portal connecting rural patients to qualified medical specialists.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/myimage.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="author" content="Devendra Vinod Patil">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="nav-inner">
+            <a href="index.html" class="logo"><span class="star">&#10022;</span> DEVENDRA</a>
+            <nav class="primary-nav" aria-label="Primary">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="nav-active">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE OVERLAY MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mm-close" id="mmClose" aria-label="Close menu">&times;</button>
+        <a href="index.html" class="mm-link">Home</a>
+        <a href="about.html" class="mm-link">About</a>
+        <a href="projects.html" class="mm-link">Projects</a>
+        <a href="experience.html" class="mm-link">Experience</a>
+        <a href="achievements.html" class="mm-link">Achievements</a>
+        <a href="contact.html" class="mm-link">Contact</a>
+    </div>
+
+    <main id="top">
+
+        <!-- CASE STUDY HERO -->
+        <section class="case-study-hero">
+            <div class="container">
+                <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a> &gt; <a href="projects.html">Projects</a> &gt; <span>Virtual Chikitsa</span>
+                </nav>
+
+                <span class="hero-eyebrow">Healthcare Web Application</span>
+                <h1 style="font-size:clamp(2.5rem, 5vw, 4rem); margin-bottom:12px;">Virtual Chikitsa: Telemedicine Platform</h1>
+                <p class="page-hero-sub">
+                    A comprehensive web healthcare portal streamlining patient doctor appointments, remote video consultation sessions, and automated digital prescription management.
+                </p>
+
+                <!-- Meta Details Bar -->
+                <div class="cs-meta-bar">
+                    <div class="cs-meta-item">
+                        <span class="label">Project Domain</span>
+                        <span class="value">Telehealth &amp; HealthTech Systems</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">My Role</span>
+                        <span class="value">Full-Stack Web Developer</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Core Tech</span>
+                        <span class="value">PHP, MySQL, JavaScript, HTML5, CSS3</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Architecture</span>
+                        <span class="value">Role-Based Access Control (Patient / Doctor / Admin)</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Code Repository</span>
+                        <span class="value"><a href="https://github.com/Devendra-Vinod-Patil/telemedicine_and_remote_care" target="_blank" rel="noopener" style="text-decoration:underline;">GitHub Repository &#8599;</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN CASE STUDY LAYOUT -->
+        <div class="container">
+            <div class="cs-layout">
+
+                <!-- MAIN ARTICLE CONTENT -->
+                <article class="cs-main">
+
+                    <!-- SECTION 1: PROBLEM STATEMENT -->
+                    <section id="problem" style="padding:0; margin-bottom:48px;">
+                        <h2>1. Problem Statement &amp; Healthcare Context</h2>
+                        <p>
+                            Access to qualified medical professionals remains a persistent bottleneck for patients in non-urban and semi-urban communities. Long travel times, overcrowded clinics, and physical document management add substantial friction to routine checkups and follow-ups.
+                        </p>
+                        <p>
+                            <strong>Core Objective:</strong> Build a responsive, highly accessible telehealth platform enabling patients to browse verified medical practitioners, schedule consultations, attend remote sessions, and retrieve verifiable digital prescriptions.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 2: IMPLEMENTED FUNCTIONALITY -->
+                    <section id="features" style="padding:0; margin-bottom:48px;">
+                        <h2>2. Implemented Capabilities &amp; Workflows</h2>
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <div class="metric-val" style="color:var(--pink-deep);">RBAC</div>
+                                <div class="metric-label">3-Tier Roles</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-val">MySQL</div>
+                                <div class="metric-label">Relational Schema</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-val">WebRTC</div>
+                                <div class="metric-label">Video Calling</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-val">e-Rx</div>
+                                <div class="metric-label">Digital Prescriptions</div>
+                            </div>
+                        </div>
+
+                        <h3>Role-Based Workflows:</h3>
+                        <ul>
+                            <li><strong>Patient Workflow:</strong> Account registration, doctor directory search filtered by specialization, real-time appointment booking slot picker, and past medical history view.</li>
+                            <li><strong>Doctor Portal:</strong> Schedule and availability manager, incoming appointment confirmation/reschedule dashboard, live consultation link activation, and digital prescription creation.</li>
+                            <li><strong>Administrative Controls:</strong> Verification of doctor credentials, system user auditing, and appointment log inspection.</li>
+                            <li><strong>Consultation Suite:</strong> Integrated video consultation interface paired with a collaborative notes canvas for physicians.</li>
+                        </ul>
+                    </section>
+
+                    <!-- SECTION 3: ARCHITECTURE & DATABASE DESIGN -->
+                    <section id="architecture" style="padding:0; margin-bottom:48px;">
+                        <h2>3. System Architecture &amp; Database Design</h2>
+                        <div class="architecture-diagram">
+                            <div class="diagram-step">
+                                <span class="step-num">1</span>
+                                <div><strong>Client Tier:</strong> Responsive UI built with clean semantic HTML, modular CSS, and JavaScript for async form validation and appointment slot updates.</div>
+                            </div>
+                            <div class="diagram-step">
+                                <span class="step-num">2</span>
+                                <div><strong>Application Logic:</strong> PHP backend handling session security, parameterized SQL queries, password hashing, and appointment scheduling rules.</div>
+                            </div>
+                            <div class="diagram-step">
+                                <span class="step-num">3</span>
+                                <div><strong>Data Persistence:</strong> Normalized MySQL schema linking Patients, Doctors, Specialties, Appointments, and Prescriptions with foreign key constraints.</div>
+                            </div>
+                        </div>
+
+                        <h3>Security &amp; Data Integrity:</h3>
+                        <ul>
+                            <li><strong>SQL Injection Prevention:</strong> Use of prepared statements via PHP PDO/MySQLi across all authentication and query endpoints.</li>
+                            <li><strong>Access Control:</strong> Session-level authentication checks preventing unauthorized privilege escalation across patient and doctor views.</li>
+                            <li><strong>Data Protection:</strong> Password hashing using strong cryptographic algorithms (<code>bcrypt</code>).</li>
+                        </ul>
+                    </section>
+
+                    <!-- SECTION 4: CHALLENGES & LESSONS LEARNED -->
+                    <section id="challenges" style="padding:0; margin-bottom:48px;">
+                        <h2>4. Technical Challenges &amp; Lessons Learned</h2>
+                        <ul>
+                            <li><strong>Appointment Slot Concurrency:</strong> Handling edge cases where two patients attempt to book the identical doctor time slot simultaneously; solved via transactional validation.</li>
+                            <li><strong>Cross-Device Usability:</strong> Ensuring the appointment scheduling grid and prescription viewing modals work smoothly across low-end mobile devices.</li>
+                            <li><strong>Prescription Formatting:</strong> Standardizing the digital prescription template so doctors can quickly enter medicine dosages, frequencies, and advice without layout issues.</li>
+                        </ul>
+
+                        <h3>Future Improvements</h3>
+                        <ul>
+                            <li>Integration of live payment gateways (e.g. Razorpay sandbox) for automated consultation billing.</li>
+                            <li>Direct PDF rendering of prescriptions with cryptographic QR code validation.</li>
+                            <li>AI-assisted symptom checker triage to recommend initial medical specializations.</li>
+                        </ul>
+                    </section>
+
+                    <!-- SECTION 5: LINKS -->
+                    <section id="links" style="padding:0; margin-bottom:48px;">
+                        <h2>5. Repository &amp; Artifact Links</h2>
+                        <div class="hero-ctas" style="margin-top:20px;">
+                            <a href="https://github.com/Devendra-Vinod-Patil/telemedicine_and_remote_care" target="_blank" rel="noopener" class="btn btn-solid">View on GitHub &#8599;</a>
+                            <a href="projects.html" class="btn btn-ghost">&larr; Back to All Projects</a>
+                        </div>
+                    </section>
+
+                </article>
+
+                <!-- STICKY SIDEBAR -->
+                <aside class="cs-sidebar">
+                    <div class="cs-side-box">
+                        <h4>Table of Contents</h4>
+                        <nav class="cs-toc-list" aria-label="Case Study Sections">
+                            <a href="#problem">1. Problem &amp; Healthcare Context</a>
+                            <a href="#features">2. Capabilities &amp; Workflows</a>
+                            <a href="#architecture">3. Architecture &amp; Database</a>
+                            <a href="#challenges">4. Challenges &amp; Lessons</a>
+                            <a href="#links">5. Repository &amp; Links</a>
+                        </nav>
+                    </div>
+
+                    <div class="cs-side-box" style="background:var(--lavender);">
+                        <h4>Full-Stack Engineering</h4>
+                        <p style="font-size:0.88rem; line-height:1.5; margin-bottom:12px;">
+                            Demonstrates relational database modeling, role-based backend security, and practical full-stack application lifecycle.
+                        </p>
+                        <a href="contact.html" class="btn btn-sm btn-solid" style="width:100%; justify-content:center;">Contact Devendra &rarr;</a>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand & Introduction -->
+                <div class="footer-col footer-brand-col">
+                    <a href="index.html" class="logo footer-logo" aria-label="Devendra Patil Homepage">
+                        <span class="star">&#10022;</span> DEVENDRA
+                    </a>
+                    <p class="footer-tagline">
+                        Building practical AI/ML solutions and data-driven applications through Python, machine learning, and continuous learning.
+                    </p>
+                    <div class="footer-social-pills" aria-label="Social profiles">
+                        <a href="https://github.com/Devendra-Vinod-Patil" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="GitHub Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/devendra984" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:patildevendra984@gmail.com" class="footer-social-btn" aria-label="Send Email">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Navigation -->
+                <div class="footer-col footer-nav-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links-grid">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact & Professional Details -->
+                <div class="footer-col footer-contact-col">
+                    <h3 class="footer-heading">Let&rsquo;s Connect</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <a href="mailto:patildevendra984@gmail.com" class="footer-contact-link">patildevendra984@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Surat, Gujarat, India</span>
+                        </li>
+                        <li>
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                            <span>B.E. Information Technology</span>
+                        </li>
+                        <li class="footer-resume-item">
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="12" y2="18"></line><line x1="15" y1="15" x2="12" y2="18"></line></svg>
+                            <a href="Devendra_Vinod_Patil_Resume.pdf" download="Devendra_Vinod_Patil_Resume.pdf" class="footer-contact-link footer-resume-link">
+                                Download Resume (PDF) &darr;
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="footer-bottom-bar">
+                <span class="footer-copy">&copy; 2026 Devendra Vinod Patil. All rights reserved.</span>
+                <span class="footer-craft">Designed &amp; built with care.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Dialog Component -->
+    <dialog id="certModal">
+        <div class="lightbox-content">
+            <div class="lightbox-header">
+                <span class="lightbox-title" id="certModalTitle">Preview</span>
+                <button class="lightbox-close-btn" id="certModalClose" aria-label="Close dialog">&times;</button>
+            </div>
+            <img class="lightbox-img" id="certModalImg" src="" alt="Full view">
+            <p class="lightbox-caption" id="certModalCaption"></p>
+        </div>
+    </dialog>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

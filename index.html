@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devendra Vinod Patil — Aspiring AI/ML Engineer | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Devendra Vinod Patil — B.E. Information Technology student specializing in AI, Machine Learning, Data Science and Applied AI. CGPA 9.65/10.">
+    <meta name="keywords" content="Devendra Patil, AI, ML, Machine Learning, Data Science, Python, Portfolio">
+    <meta property="og:title" content="Devendra Vinod Patil — Aspiring AI/ML Engineer">
+    <meta property="og:description" content="B.E. IT student building intelligent solutions with Python, ML, and Data Science. Explore projects, certifications, and achievements.">
+    <meta property="og:image" content="images/myimage.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta property="og:type" content="website">
+    <meta name="author" content="Devendra Vinod Patil">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    
+    <!-- External Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+
+    <!-- ============================================================
+         1. HEADER & NAVIGATION (HEADER PART)
+         ============================================================
+         MODIFY: Navigation links, logo brand text & icon here.
+    -->
+    <header>
+        <div class="nav-inner">
+            <!-- Brand Logo -->
+            <a href="index.html" class="logo"><span class="star">&#10022;</span> DEVENDRA</a>
+            
+            <!-- Desktop Navigation Links -->
+            <nav class="primary-nav" aria-label="Primary">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Hamburger Button -->
+            <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============================================================
+         2. MOBILE OVERLAY MENU
+         ============================================================
+    -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mm-close" id="mmClose" aria-label="Close menu">&times;</button>
+        <a href="index.html" class="mm-link">Home</a>
+        <a href="about.html" class="mm-link">About</a>
+        <a href="projects.html" class="mm-link">Projects</a>
+        <a href="experience.html" class="mm-link">Experience</a>
+        <a href="achievements.html" class="mm-link">Achievements</a>
+        <a href="resume.html" class="mm-link">Resume</a>
+        <a href="contact.html" class="mm-link">Contact</a>
+    </div>
+
+    <!-- ============================================================
+         MAIN CONTENT AREA
+         ============================================================ -->
+    <main id="top">
+
+        <!-- ============================================================
+             3. HERO SECTION
+             ============================================================
+             MODIFY: Hero greeting, portrait image/SVG, title, subtext, badges, CTAs & fact chips.
+        -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+
+                    <!-- Left: Portrait Photo / Illustration -->
+                    <div class="hero-photo-wrap">
+                        <div class="hero-annotation" aria-hidden="true">
+                            <span>hello, I&rsquo;m Devendra</span>
+                            <svg viewBox="0 0 46 34">
+                                <path d="M2 4 C 18 2, 30 10, 40 26 M40 26 L 30 22 M40 26 L 36 12" />
+                            </svg>
+                        </div>
+
+                        <div class="photo-card">
+                            <img src="images/myimage.png" alt="Devendra Vinod Patil" class="hero-photo" width="320" height="400">
+                        </div>
+                        <div class="photo-role-badge"><span class="star">&#10022;</span> Aspiring AI/ML Engineer</div>
+                    </div>
+
+                    <!-- Right: Hero Text Content -->
+                    <div class="hero-copy reveal">
+                        <span class="hero-eyebrow">Hi, I&rsquo;m</span>
+                        <h1>Devendra<br><span class="name-highlight">Vinod Patil.</span></h1>
+                        <!-- Animated doodle underline below name -->
+                        <svg class="name-underline" viewBox="0 0 340 14" aria-hidden="true">
+                            <path d="M4 9 Q 55 2, 110 8 T 220 7 T 336 9" />
+                        </svg>
+                        <p class="hero-sub">Aspiring AI/ML Engineer — I turn data into intelligent, practical solutions using Python and Machine Learning.</p>
+
+                        <div class="hero-role">
+                            <span class="role-badge">B.E. Information Technology</span>
+                            <span class="role-tags">Data Science &bull; Machine Learning &bull; GenAI</span>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="hero-ctas">
+                            <a href="#projects" class="btn btn-solid">Explore My Work &rarr;</a>
+                            <a href="resume.html" class="btn btn-ghost">&#128196; View Resume</a>
+                            <a href="Devendra_Vinod_Patil_Resume.pdf" download="Devendra_Vinod_Patil_Resume.pdf" class="btn btn-ghost" style="padding:16px 20px;" title="Download PDF">&#8595; PDF</a>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="hero-social">
+                            <a href="https://github.com/Devendra-Vinod-Patil" target="_blank" rel="noopener">GitHub &#8599;</a>
+                            <a href="https://linkedin.com/in/devendra984" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+                            <a href="mailto:patildevendra984@gmail.com">Email &#8599;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Fact Strip -->
+                <div class="hero-strip reveal">
+                    <p class="intro">IT student exploring Data Science, Machine Learning and GenAI through practical projects and real-world problem solving.</p>
+                    <div class="fact-chip">
+                        <div class="fk">EDUCATION</div>
+                        <div class="fv">B.E. Information Technology</div>
+                    </div>
+                    <div class="fact-chip">
+                        <div class="fk">ACADEMICS</div>
+                        <div class="fv">9.65 / 10 CGPA</div>
+                    </div>
+                    <div class="fact-chip">
+                        <div class="fk">BASED IN</div>
+                        <div class="fv">Surat, Gujarat, India</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             4. ABOUT SECTION
+             ============================================================
+             MODIFY: Bio text & quick info notes (Education, College, CGPA).
+        -->
+        <section id="about">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>Who am I?</h2>
+                    <svg class="doodle-underline" viewBox="0 0 150 14">
+                        <path d="M3 8 Q 40 -2, 75 8 T 147 8" />
+                    </svg>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-copy reveal">
+                        <p>I&rsquo;m <strong>Devendra Vinod Patil</strong>, a passionate Information Technology engineering student with a deep interest in <strong>Artificial Intelligence, Machine Learning, and Data Science</strong>. I&rsquo;m currently pursuing my B.E. in Information Technology from C.K. Pithawala College of Engineering &amp; Technology, affiliated with Gujarat Technological University.</p>
+                        <p>With a CGPA of <strong>9.65/10</strong> through Semester 6, I have consistently demonstrated strong academic performance while simultaneously building real-world projects that solve practical problems.</p>
+                        <p>My approach to technology is pragmatic &mdash; I believe in learning by building. From shipment delay prediction systems using multiple ML algorithms to full-stack AI-powered career platforms, I enjoy the entire pipeline from data preprocessing to model deployment.</p>
+                    </div>
+
+                    <div class="info-blocks reveal reveal-delay-1">
+                        <div class="info-note">
+                            <div class="lk">EDUCATION</div>
+                            <div class="lv">B.E. Information Technology</div>
+                        </div>
+                        <div class="info-note">
+                            <div class="lk">COLLEGE</div>
+                            <div class="lv">C.K. Pithawala College of Engineering &amp; Technology</div>
+                        </div>
+                        <div class="info-note">
+                            <div class="lk">UNIVERSITY</div>
+                            <div class="lv">Gujarat Technological University</div>
+                        </div>
+                        <div class="info-note">
+                            <div class="lk">CURRENT CGPA</div>
+                            <div class="lv">9.65 / 10</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             5. SKILLS SECTION
+             ============================================================
+             MODIFY: Programming languages, AI/ML concepts, libraries & tools.
+        -->
+        <section id="skills">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>What I work with</h2>
+                    <span class="section-tag">Things I use &rarr;</span>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Skill Card 1: Programming -->
+                    <div class="card skill-card reveal">
+                        <div class="skill-num">01</div>
+                        <div class="skill-title">Programming</div>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>C</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 2: AI / ML -->
+                    <div class="card skill-card reveal reveal-delay-1">
+                        <div class="skill-num">02</div>
+                        <div class="skill-title">AI / ML</div>
+                        <ul class="skill-list">
+                            <li>Machine Learning</li>
+                            <li>Data Preprocessing</li>
+                            <li>EDA</li>
+                            <li>Feature Engineering</li>
+                            <li>Model Evaluation</li>
+                            <li>GenAI</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 3: Libraries -->
+                    <div class="card skill-card reveal reveal-delay-2">
+                        <div class="skill-num">03</div>
+                        <div class="skill-title">Libraries</div>
+                        <ul class="skill-list">
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Scikit-learn</li>
+                            <li>Matplotlib</li>
+                            <li>Seaborn</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 4: Tools & Database -->
+                    <div class="card skill-card reveal reveal-delay-3">
+                        <div class="skill-num">04</div>
+                        <div class="skill-title">Tools &amp; Database</div>
+                        <ul class="skill-list">
+                            <li>MySQL</li>
+                            <li>Jupyter Notebook</li>
+                            <li>Google Colab</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>VS Code</li>
+                            <li>Power BI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             6. PROJECTS SECTION
+             ============================================================
+             MODIFY: Featured build, minor projects, descriptions & URLs.
+        -->
+        <section id="projects">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>Featured Projects</h2>
+                    <span class="section-tag">Things I&rsquo;ve built &rarr;</span>
+                </div>
+
+                <!-- Featured Project (Large Highlight Card) -->
+                <div class="projects-featured reveal">
+                    <div class="project-feat">
+                        <div class="pf-visual">
+                            <div class="pf-num">01</div>
+                            <img src="images/swiftcargo-preview.png" alt="SwiftCargo Shipment Delay Prediction System" class="pf-img" loading="lazy" />
+                        </div>
+                        <div class="pf-body">
+                            <span class="pf-tag">Featured build</span>
+                            <h3>SwiftCargo</h3>
+                            <p class="pf-role">Shipment Delay Prediction System</p>
+                            <div class="pf-stack">
+                                <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Streamlit</span>
+                            </div>
+                            <p class="pf-desc">Developed an end-to-end shipment delay prediction system using integrated
+                                logistics, traffic, weather and warehouse datasets.</p>
+                            <ul class="pf-highlights">
+                                <li>Data preprocessing</li>
+                                <li>Feature engineering</li>
+                                <li>Multiple ML models</li>
+                                <li>GridSearchCV</li>
+                                <li>RFECV</li>
+                                <li>Real-time prediction</li>
+                                <li>Streamlit app</li>
+                            </ul>
+                            <div class="pf-links">
+                                <a href="project-swiftcargo.html" class="btn btn-sm btn-solid">Case Study &rarr;</a>
+                                <a href="https://swiftcargoshipmentdelayprediction-a8bcuz9uvpretde4uqo8oc.streamlit.app/" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">Live Demo &#8599;</a>
+                                <a href="https://github.com/Devendra-Vinod-Patil/SwiftCargo_shipment_delay_prediction" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">GitHub &#8599;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid of Other Notable Projects -->
+                <div class="projects-rest">
+                    <!-- Project 2 -->
+                    <div class="card proj-card reveal">
+                        <div class="proj-num">02</div>
+                        <h4>ResumeAI</h4>
+                        <p class="proj-tag">Smart Career Studio</p>
+                        <p class="proj-desc">Full-stack AI-powered career platform featuring an ATS resume builder,
+                            cover letter generator and adaptive AI mock interview.</p>
+                        <div class="proj-stack"><span>Flask</span><span>SQLite</span><span>Gemini API</span><span>OpenAI</span></div>
+                        <div class="proj-links">
+                            <a href="project-resumeai.html">Case Study &rarr;</a>
+                            <a href="https://ai-resume-analyzer-and-ai-interview.onrender.com/" target="_blank" rel="noopener">Live Demo &#8599;</a>
+                            <a href="https://github.com/Devendra-Vinod-Patil/ai_resume_analyzer_and_ai_interview/tree/main/static" target="_blank" rel="noopener">GitHub &#8599;</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="card proj-card reveal reveal-delay-1">
+                        <div class="proj-num">03</div>
+                        <h4>Virtual Chikitsa</h4>
+                        <p class="proj-tag">Telemedicine Platform</p>
+                        <p class="proj-desc">Web-based telemedicine platform supporting online appointments, video
+                            consultations and digital prescriptions.</p>
+                        <div class="proj-stack"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+                        <div class="proj-links">
+                            <a href="project-virtualchikitsa.html">Case Study &rarr;</a>
+                            <a href="https://github.com/Devendra-Vinod-Patil/telemedicine_and_remote_care" target="_blank" rel="noopener">GitHub &#8599;</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="card proj-card reveal reveal-delay-2">
+                        <div class="proj-num">04</div>
+                        <h4>Pad Le Beta GTU</h4>
+                        <p class="proj-tag">GTU Study Platform</p>
+                        <p class="proj-desc">Study smarter, prepare better &mdash; organized educational resources for
+                            GTU students including notes, PDFs and video materials.</p>
+                        <div class="proj-stack"><span>Notes</span><span>PDFs</span><span>Videos</span></div>
+                        <div class="proj-links">
+                            <a href="project-padlebeta.html">Case Study &rarr;</a>
+                            <a href="https://padlebetagtu.xo.je/" target="_blank" rel="noopener">Live Demo &#8599;</a>
+                            <a href="https://github.com/Devendra-Vinod-Patil" target="_blank" rel="noopener">GitHub &#8599;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             7. EXPERIENCE / TIMELINE SECTION
+             ============================================================
+             MODIFY: Internships, roles, duration dates & tech stacks.
+        -->
+        <section id="experience">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>Where I&rsquo;ve learned</h2>
+                    <svg class="doodle-underline" viewBox="0 0 150 14">
+                        <path d="M3 8 Q 40 -2, 75 8 T 147 8" />
+                    </svg>
+                </div>
+
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="tl-item reveal">
+                        <div class="tl-num">01</div>
+                        <div class="card tl-card">
+                            <div class="tl-top">
+                                <div>
+                                    <h3>IBM SkillsBuild &ndash; BharatCares</h3>
+                                    <p class="tl-role">Gen AI &amp; Cloud Computing Intern</p>
+                                </div>
+                                <div class="tl-meta">June 2026 &ndash; July 2026<br>6-Week Internship</div>
+                            </div>
+                            <p class="tl-desc">Successfully completed a 6-week IBM SkillsBuild Gen AI &amp; Cloud
+                                Computing Internship in association with AICTE and IBM SkillsBuild.</p>
+                            <div class="tl-stack"><span>Generative AI</span><span>Cloud Computing</span><span>AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="tl-item reveal reveal-delay-1">
+                        <div class="tl-num">02</div>
+                        <div class="card tl-card">
+                            <div class="tl-top">
+                                <div>
+                                    <h3>Technetics IT Services</h3>
+                                    <p class="tl-role">Data Science Intern</p>
+                                </div>
+                                <div class="tl-meta">July 2026<br>On-Site</div>
+                            </div>
+                            <p class="tl-desc">Developed a Machine Learning model for Shipment Delay Prediction using
+                                logistics data and performed data cleaning, EDA and feature engineering.</p>
+                            <div class="tl-stack"><span>Python</span><span>SQL</span><span>Machine Learning</span><span>EDA</span><span>Feature Engineering</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             8. CERTIFICATIONS SECTION
+             ============================================================
+             MODIFY: Certificate titles, organizations, scores & links.
+        -->
+        <section id="certifications">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>Certifications</h2>
+                    <span class="section-tag">Proof of the work &rarr;</span>
+                </div>
+
+                <div class="cert-grid">
+                    <!-- Cert 1 -->
+                    <div class="card cert-card reveal">
+                        <div>
+                            <div class="cert-org">NPTEL</div>
+                            <div class="cert-name">Python for Data Science</div>
+                        </div>
+                        <div>
+                            <div class="cert-score">83%</div>
+                            <div class="cert-badge">TOP 5%</div>
+                        </div>
+                        <a href="images/cert-nptel-python.png" class="cert-link">View Certificate &#8599;</a>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="card cert-card reveal reveal-delay-1">
+                        <div>
+                            <div class="cert-org">NPTEL</div>
+                            <div class="cert-name">Data Mining</div>
+                        </div>
+                        <div>
+                            <div class="cert-score">82%</div>
+                            <div class="cert-badge">ELITE + SILVER</div>
+                        </div>
+                        <a href="images/cert-nptel-data-mining.png" class="cert-link">View Certificate &#8599;</a>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="card cert-card reveal reveal-delay-2">
+                        <div>
+                            <div class="cert-org">AGENTIC AI</div>
+                            <div class="cert-name">Certified Foundations Associate</div>
+                        </div>
+                        <div></div>
+                        <a href="images/cert-oracle.png" class="cert-link">View Certificate &#8599;</a>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="card cert-card reveal reveal-delay-3">
+                        <div>
+                            <div class="cert-org">INFOSYS</div>
+                            <div class="cert-name">Java Certificate Course</div>
+                        </div>
+                        <div></div>
+                        <a href="images/cert-infosys.png" class="cert-link">View Certificate &#8599;</a>
+                    </div>
+
+                    <!-- Cert 5 -->
+                    <div class="card cert-card reveal reveal-delay-4">
+                        <div>
+                            <div class="cert-org">CODE UNNATI FOUNDATION</div>
+                            <div class="cert-name">Advanced Course Certification</div>
+                        </div>
+                        <div></div>
+                        <a href="images/cert-edunet.png" class="cert-link">View Certificate &#8599;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             9. ACHIEVEMENTS SECTION
+             ============================================================
+             MODIFY: Key numbers, test scores, CGPA & rank milestones.
+        -->
+        <section id="achievements">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>Achievements</h2>
+                    <svg class="doodle-underline" viewBox="0 0 150 14">
+                        <path d="M3 8 Q 40 -2, 75 8 T 147 8" />
+                    </svg>
+                </div>
+
+                <div class="ach-grid">
+                    <!-- Achievement 1 -->
+                    <div class="card ach-card reveal">
+                        <div class="ach-num">TOP 5%</div>
+                        <div>
+                            <div class="ach-label">NPTEL &mdash; Python for Data Science</div>
+                            <div class="ach-sub">83% Score</div>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="card ach-card reveal reveal-delay-1">
+                        <div class="ach-num">9.65/10</div>
+                        <div>
+                            <div class="ach-label">CGPA</div>
+                            <div class="ach-sub">Up to 6th Semester</div>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="card ach-card reveal reveal-delay-2">
+                        <div class="ach-num">93%</div>
+                        <div>
+                            <div class="ach-label">Class X</div>
+                            <div class="ach-sub">GSEB</div>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 4 -->
+                    <div class="card ach-card reveal reveal-delay-3">
+                        <div class="ach-num">77.16%</div>
+                        <div>
+                            <div class="ach-label">Class XII</div>
+                            <div class="ach-sub">GSEB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             9B. MOVING PHOTO & ACHIEVEMENT GALLERY PREVIEW
+             ============================================================
+        -->
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <div class="gallery-header-row">
+                    <div>
+                        <div class="section-head" style="margin-bottom:0;">
+                            <h2>Gallery &amp; Credential Preview</h2>
+                            <span class="section-tag">Smooth sliding achievement preview &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-ctrl-btn" id="galleryPrevBtn" aria-label="Previous image">&larr;</button>
+                        <button class="gallery-ctrl-btn" id="galleryNextBtn" aria-label="Next image">&rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Gallery Sliding Track -->
+                <div class="gallery-track-wrap" id="galleryTrackWrap" tabindex="0" aria-label="Horizontal scrollable certificate previews">
+                    <div class="gallery-track">
+                        <!-- Card 1 -->
+                        <div class="gallery-card" data-category="cert" data-img="images/cert-nptel-python.png" data-title="NPTEL Python for Data Science" data-caption="Elite Badge — 83% Score (Top 5% National Candidate). Ministry of Education, Govt. of India.">
+                            <div class="gallery-img-wrap">
+                                <span class="gallery-card-badge">Top 5% Elite</span>
+                                <img src="images/cert-nptel-python.png" alt="NPTEL Python for Data Science" loading="lazy">
+                            </div>
+                            <div class="gallery-card-body">
+                                <div>
+                                    <div class="gallery-card-title">Python for Data Science</div>
+                                    <p class="gallery-card-caption">NPTEL / IIT Madras &bull; Score: 83% &bull; Elite</p>
+                                </div>
+                                <div class="gallery-card-footer">
+                                    <span>Click to enlarge</span>
+                                    <span>&#10022; View</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="gallery-card" data-category="cert" data-img="images/cert-nptel-data-mining.png" data-title="NPTEL Data Mining" data-caption="Elite + Silver Medal with 82% Score. Rigorous evaluation in association with IIT Kharagpur.">
+                            <div class="gallery-img-wrap">
+                                <span class="gallery-card-badge" style="background:#4A6B82;">Elite + Silver</span>
+                                <img src="images/cert-nptel-data-mining.png" alt="NPTEL Data Mining" loading="lazy">
+                            </div>
+                            <div class="gallery-card-body">
+                                <div>
+                                    <div class="gallery-card-title">Data Mining</div>
+                                    <p class="gallery-card-caption">NPTEL / IIT Kharagpur &bull; Score: 82% &bull; Silver</p>
+                                </div>
+                                <div class="gallery-card-footer">
+                                    <span>Click to enlarge</span>
+                                    <span>&#10022; View</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="gallery-card" data-category="cert" data-img="images/cert-oracle.png" data-title="Agentic AI: Certified Foundations Associate" data-caption="Oracle University certified credential in autonomous agent architectures and GenAI.">
+                            <div class="gallery-img-wrap">
+                                <span class="gallery-card-badge" style="background:#B33924;">Certified Associate</span>
+                                <img src="images/cert-oracle.png" alt="Agentic AI Certified Foundations Associate" loading="lazy">
+                            </div>
+                            <div class="gallery-card-body">
+                                <div>
+                                    <div class="gallery-card-title">Agentic AI Foundations</div>
+                                    <p class="gallery-card-caption">Oracle University &bull; Autonomous agent paradigms</p>
+                                </div>
+                                <div class="gallery-card-footer">
+                                    <span>Click to enlarge</span>
+                                    <span>&#10022; View</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="gallery-card" data-category="cert" data-img="images/cert-infosys.png" data-title="Infosys Springboard Java" data-caption="Comprehensive certification in Object-Oriented Programming and Java modular architecture.">
+                            <div class="gallery-img-wrap">
+                                <span class="gallery-card-badge" style="background:#0F62FE;">Infosys Certified</span>
+                                <img src="images/cert-infosys.png" alt="Infosys Java Certificate" loading="lazy">
+                            </div>
+                            <div class="gallery-card-body">
+                                <div>
+                                    <div class="gallery-card-title">Java Certificate Course</div>
+                                    <p class="gallery-card-caption">Infosys Springboard &bull; Core Java &amp; OOP</p>
+                                </div>
+                                <div class="gallery-card-footer">
+                                    <span>Click to enlarge</span>
+                                    <span>&#10022; View</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="gallery-card" data-category="cert" data-img="images/cert-edunet.png" data-title="Code Unnati Advanced Course" data-caption="Edunet Foundation &amp; SAP Code Unnati advanced curriculum.">
+                            <div class="gallery-img-wrap">
+                                <span class="gallery-card-badge" style="background:#198038;">Foundation Award</span>
+                                <img src="images/cert-edunet.png" alt="Code Unnati Certificate" loading="lazy">
+                            </div>
+                            <div class="gallery-card-body">
+                                <div>
+                                    <div class="gallery-card-title">Code Unnati Course</div>
+                                    <p class="gallery-card-caption">Edunet Foundation / SAP &bull; Advanced Tech</p>
+                                </div>
+                                <div class="gallery-card-footer">
+                                    <span>Click to enlarge</span>
+                                    <span>&#10022; View</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6: Digital Learning Excellence Award — CKPCET Campus -->
+                        <div class="gallery-card" data-category="academic" data-img="images/award-ckpcet-silver.png" data-title="Digital Learning Excellence Award — CKPCET" data-caption="Award Ceremony at C.K. Pithawala College Campus — Silver Medal &amp; Recognition for NPTEL Python for Data Science.">
+                            <div class="gallery-img-wrap">
+                                <span class="gallery-card-badge" style="background:#f45fae;">Award Ceremony</span>
+                                <img src="images/award-ckpcet-silver.png" alt="CKPCET Award Ceremony" loading="lazy">
+                            </div>
+                            <div class="gallery-card-body">
+                                <div>
+                                    <div class="gallery-card-title">Digital Learning Excellence Award</div>
+                                    <p class="gallery-card-caption">CKPCET Campus &bull; Silver Medal &bull; Python for Data Science</p>
+                                </div>
+                                <div class="gallery-card-footer">
+                                    <span>Click to enlarge</span>
+                                    <span>&#10022; View</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 7: Certificate of Appreciation — Top Ranker -->
+                        <div class="gallery-card" data-category="academic" data-img="images/award-topper-certificate.png" data-title="Certificate of Appreciation — Top Ranker" data-caption="Felicitation and Certificate of Appreciation awarded to Patil Devendra Vinod as Top Ranker in Information Technology.">
+                            <div class="gallery-img-wrap">
+                                <span class="gallery-card-badge" style="background:#0F62FE;">Top Ranker</span>
+                                <img src="images/award-topper-certificate.png" alt="Top Ranker Certificate" loading="lazy">
+                            </div>
+                            <div class="gallery-card-body">
+                                <div>
+                                    <div class="gallery-card-title">Top Ranker Recognition</div>
+                                    <p class="gallery-card-caption">Certificate of Appreciation &bull; Department of Information Technology</p>
+                                </div>
+                                <div class="gallery-card-footer">
+                                    <span>Click to enlarge</span>
+                                    <span>&#10022; View</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 8: Felicitation of Toppers Stage Ceremony -->
+                        <div class="gallery-card" data-category="academic" data-img="images/award-felicitation-toppers.png" data-title="Felicitation of Toppers Ceremony" data-caption="Stage felicitation ceremony honoring high academic achievers.">
+                            <div class="gallery-img-wrap">
+                                <span class="gallery-card-badge" style="background:#198038;">Felicitation</span>
+                                <img src="images/award-felicitation-toppers.png" alt="Felicitation of Toppers" loading="lazy">
+                            </div>
+                            <div class="gallery-card-body">
+                                <div>
+                                    <div class="gallery-card-title">Felicitation of Toppers</div>
+                                    <p class="gallery-card-caption">Stage Ceremony &bull; Honoring High Academic Achievers</p>
+                                </div>
+                                <div class="gallery-card-footer">
+                                    <span>Click to enlarge</span>
+                                    <span>&#10022; View</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 9: Vibe Coding Seminar Felicitation -->
+                        <div class="gallery-card" data-category="academic" data-img="images/award-jivan-jyot-trust.png" data-title="Vibe Coding Seminar Felicitation" data-caption="Felicitation by the college during a Vibe Coding seminar delivered as a representative of Technetics IT.">
+                            <div class="gallery-img-wrap">
+                                <span class="gallery-card-badge" style="background:#8a3ffc;">Seminar Felicitation</span>
+                                <img src="images/award-jivan-jyot-trust.png" alt="Vibe Coding seminar felicitation at Jivan Jyot Trust" class="pos-faces" loading="lazy">
+                            </div>
+                            <div class="gallery-card-body">
+                                <div>
+                                    <div class="gallery-card-title">Vibe Coding &amp; Felicitation</div>
+                                    <p class="gallery-card-caption">Technetics IT &bull; College Seminar &bull; Recognition</p>
+                                </div>
+                                <div class="gallery-card-footer">
+                                    <span>Click to enlarge</span>
+                                    <span>&#10022; View</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 10: Vibe Coding Seminar Group Photo with Principal -->
+                        <div class="gallery-card" data-category="academic" data-img="images/award-amroli-faculty.png" data-title="Vibe Coding Seminar with College Principal" data-caption="Group photograph with the college principal during a college visit to deliver a Vibe Coding seminar representing Technetics IT.">
+                            <div class="gallery-img-wrap">
+                                <span class="gallery-card-badge" style="background:#4A6B82;">Seminar Visit</span>
+                                <img src="images/award-amroli-faculty.png" alt="Group photo with college principal during a Vibe Coding seminar" class="pos-faces" loading="lazy">
+                            </div>
+                            <div class="gallery-card-body">
+                                <div>
+                                    <div class="gallery-card-title">Vibe Coding &amp; College Visit</div>
+                                    <p class="gallery-card-caption">Technetics IT &bull; Interaction with College Principal</p>
+                                </div>
+                                <div class="gallery-card-footer">
+                                    <span>Click to enlarge</span>
+                                    <span>&#10022; View</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div style="text-align:center; margin-top:24px;">
+                    <a href="achievements.html" class="btn btn-sm btn-ghost">View All Achievements &amp; Full Gallery &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             10. CONTACT SECTION
+             ============================================================
+        -->
+        <section id="contact">
+            <div class="container">
+                <div class="contact-wrap">
+                    <!-- Contact Left Details -->
+                    <div class="contact-intro reveal">
+                        <h2>Let&rsquo;s connect</h2>
+                        <p>Have a project idea, internship opportunity, or just want to say hi? Let&rsquo;s talk.</p>
+
+                        <div class="contact-details">
+                            <div class="cd-item">
+                                <div class="cd-label">EMAIL</div>
+                                <a class="cd-value" href="mailto:patildevendra984@gmail.com">patildevendra984@gmail.com</a>
+                                <div style="margin-top:4px;">
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=patildevendra984@gmail.com" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:4px; font-size:0.8rem; font-family:var(--ff-ui); color:var(--pink-deep); font-weight:600; text-decoration:none;">
+                                        Open directly in Gmail &nearr;
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cd-item">
+                                <div class="cd-label">PHONE</div>
+                                <a class="cd-value" href="tel:+919033051964">+91 90330 51964</a>
+                            </div>
+                            <div class="cd-item">
+                                <div class="cd-label">GITHUB</div>
+                                <a class="cd-value" href="https://github.com/Devendra-Vinod-Patil" target="_blank" rel="noopener" aria-label="GitHub Profile">
+                                    <svg class="cd-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>github.com/Devendra-Vinod-Patil</span>
+                                </a>
+                            </div>
+                            <div class="cd-item">
+                                <div class="cd-label">LINKEDIN</div>
+                                <a class="cd-value" href="https://linkedin.com/in/devendra984" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+                                    <svg class="cd-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                    <span>linkedin.com/in/devendra984</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="card contact-form reveal reveal-delay-1" id="contactForm">
+                        <div class="field">
+                            <label for="cf-name">Name</label>
+                            <input type="text" id="cf-name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="field">
+                            <label for="cf-email">Email</label>
+                            <input type="email" id="cf-email" name="email" required placeholder="you@email.com">
+                        </div>
+                        <div class="field">
+                            <label for="cf-subject">Subject</label>
+                            <input type="text" id="cf-subject" name="subject" placeholder="What's this about?">
+                        </div>
+                        <div class="field">
+                            <label for="cf-message">Message</label>
+                            <textarea id="cf-message" name="message" required placeholder="Tell me a bit more..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-solid" id="submitBtn">Send Message &rarr;</button>
+                        <p class="contact-helper" style="font-size:0.82rem; color:var(--ink-soft); margin-top:8px;">&#9432; Submitting opens Gmail directly with your pre-filled message.</p>
+                        <p class="form-note" id="formNote" style="font-size:0.9rem; font-weight:500; margin-top:10px; min-height:1.2em;"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    <!-- ============================================================
+         CERTIFICATE & IMAGE MODAL (LIGHTBOX)
+         ============================================================ -->
+    <dialog id="certModal">
+        <div class="lightbox-content">
+            <div class="lightbox-header">
+                <span class="lightbox-title" id="certModalTitle">Certificate &amp; Document Viewer</span>
+                <button class="lightbox-close-btn" id="certModalClose" aria-label="Close dialog">&times;</button>
+            </div>
+            <img class="lightbox-img" id="certModalImg" src="" alt="Full view">
+            <p class="lightbox-caption" id="certModalCaption"></p>
+        </div>
+    </dialog>
+    </main>
+
+    <!-- ============================================================
+         11. FOOTER SECTION (FOOTER PART)
+         ============================================================
+         MODIFY: Logo, social profile links & copyright declaration here.
+    -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand & Introduction -->
+                <div class="footer-col footer-brand-col">
+                    <a href="index.html" class="logo footer-logo" aria-label="Devendra Patil Homepage">
+                        <span class="star">&#10022;</span> DEVENDRA
+                    </a>
+                    <p class="footer-tagline">
+                        Building practical AI/ML solutions and data-driven applications through Python, machine learning, and continuous learning.
+                    </p>
+                    <div class="footer-social-pills" aria-label="Social profiles">
+                        <a href="https://github.com/Devendra-Vinod-Patil" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="GitHub Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/devendra984" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:patildevendra984@gmail.com" class="footer-social-btn" aria-label="Send Email">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Navigation -->
+                <div class="footer-col footer-nav-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links-grid">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact & Professional Details -->
+                <div class="footer-col footer-contact-col">
+                    <h3 class="footer-heading">Let&rsquo;s Connect</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <a href="mailto:patildevendra984@gmail.com" class="footer-contact-link">patildevendra984@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Surat, Gujarat, India</span>
+                        </li>
+                        <li>
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                            <span>B.E. Information Technology</span>
+                        </li>
+                        <li class="footer-resume-item">
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="12" y2="18"></line><line x1="15" y1="15" x2="12" y2="18"></line></svg>
+                            <a href="Devendra_Vinod_Patil_Resume.pdf" download="Devendra_Vinod_Patil_Resume.pdf" class="footer-contact-link footer-resume-link">
+                                Download Resume (PDF) &darr;
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="footer-bottom-bar">
+                <span class="footer-copy">&copy; 2026 Devendra Vinod Patil. All rights reserved.</span>
+                <span class="footer-craft">Designed &amp; built with care.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

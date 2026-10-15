@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftCargo Case Study — Devendra Vinod Patil | AI/ML Portfolio</title>
+    <meta name="description"
+        content="In-depth ML case study of SwiftCargo: Shipment Delay Prediction System using integrated logistics, traffic, and weather data by Devendra Vinod Patil.">
+    <meta property="og:title" content="SwiftCargo Case Study — Devendra Vinod Patil | AI/ML Portfolio">
+    <meta property="og:description" content="Predicting shipment delivery delays using integrated logistics, traffic, weather datasets and Streamlit UI.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/swiftcargo-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="author" content="Devendra Vinod Patil">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="nav-inner">
+            <a href="index.html" class="logo"><span class="star">&#10022;</span> DEVENDRA</a>
+            <nav class="primary-nav" aria-label="Primary">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="nav-active">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE OVERLAY MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mm-close" id="mmClose" aria-label="Close menu">&times;</button>
+        <a href="index.html" class="mm-link">Home</a>
+        <a href="about.html" class="mm-link">About</a>
+        <a href="projects.html" class="mm-link">Projects</a>
+        <a href="experience.html" class="mm-link">Experience</a>
+        <a href="achievements.html" class="mm-link">Achievements</a>
+        <a href="contact.html" class="mm-link">Contact</a>
+    </div>
+
+    <main id="top">
+
+        <!-- CASE STUDY HERO -->
+        <section class="case-study-hero">
+            <div class="container">
+                <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a> &gt; <a href="projects.html">Projects</a> &gt; <span>SwiftCargo</span>
+                </nav>
+
+                <span class="hero-eyebrow">Applied Machine Learning Case Study</span>
+                <h1 style="font-size:clamp(2.3rem, 4.5vw, 3.8rem); margin-bottom:12px;">SwiftCargo: Shipment Delay Prediction System</h1>
+                <p class="page-hero-sub">
+                    An intelligent machine learning-based solution for predicting supply chain delays before scheduled delivery using multi-source logistics integration, advanced feature engineering, systematic model evaluation, and automated testing.
+                </p>
+
+                <!-- Meta Details Bar -->
+                <div class="cs-meta-bar">
+                    <div class="cs-meta-item">
+                        <span class="label">Project Domain</span>
+                        <span class="value">Supply Chain &amp; Logistics AI</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Author &amp; Date</span>
+                        <span class="value">Patil Devendra Vinod &bull; July 2026</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Best Model</span>
+                        <span class="value">Optimized Random Forest (RFECV 30 Features)</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Core Metrics</span>
+                        <span class="value">71.28% Accuracy &bull; 73.68% Precision &bull; 72.46% ROC-AUC</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Live Application</span>
+                        <span class="value"><a href="https://swiftcargoshipmentdelayprediction-a8bcuz9uvpretde4uqo8oc.streamlit.app/" target="_blank" rel="noopener" style="text-decoration:underline;">Streamlit Web App &#8599;</a></span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Technical Report</span>
+                        <span class="value"><a href="docs/SwiftCargo_Project_Report.pdf" download="SwiftCargo_Project_Report.pdf" style="text-decoration:underline; font-weight:700;">Download Report (PDF) &darr;</a></span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="label">Code Repository</span>
+                        <span class="value"><a href="https://github.com/Devendra-Vinod-Patil/SwiftCargo_shipment_delay_prediction" target="_blank" rel="noopener" style="text-decoration:underline;">GitHub Repository &#8599;</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN CASE STUDY LAYOUT -->
+        <div class="container">
+            <div class="cs-layout">
+
+                <!-- MAIN ARTICLE CONTENT -->
+                <article class="cs-main">
+
+                    <!-- FEATURED PROJECT BANNER -->
+                    <div class="card" style="margin-bottom:40px; padding:16px; background:linear-gradient(155deg, var(--blue), var(--lavender)); border-radius:18px;">
+                        <img src="images/swiftcargo-preview.png" alt="SwiftCargo Shipment Delay Prediction System Dashboard Overview" style="width:100%; height:auto; border-radius:12px; border:2px solid var(--ink); box-shadow:var(--shadow-flat); display:block;" />
+                    </div>
+
+                    <!-- TOP PERFORMANCE METRICS GRID -->
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-val" style="color:var(--pink-deep);">71.28%</div>
+                            <div class="metric-label">Final Accuracy</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val">73.68%</div>
+                            <div class="metric-label">Precision (Low False Alarms)</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val">72.46%</div>
+                            <div class="metric-label">ROC-AUC Score</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val">30</div>
+                            <div class="metric-label">Optimal Features (RFECV)</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val">12</div>
+                            <div class="metric-label">Integrated Data Sources</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val">100</div>
+                            <div class="metric-label">Ensemble Trees</div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 1: EXECUTIVE SUMMARY & PROBLEM -->
+                    <section id="executive-summary" style="padding:0; margin-bottom:48px;">
+                        <h2>1. Executive Summary &amp; Problem Statement</h2>
+                        <p>
+                            In the modern logistics and supply chain industry, delivering shipments on or before the expected delivery date is essential for maintaining customer satisfaction, reducing operational costs, and preventing cascading bottlenecks across distribution centers. However, factors such as traffic congestion, adverse weather, vehicle breakdowns, warehouse congestion, and operational delays create significant delivery uncertainties.
+                        </p>
+                        <p>
+                            Traditional logistics operations rely on manual tracking or reactive alerts, leaving managers unable to prevent delays until after they have already disrupted fulfillment operations. Delayed deliveries lead to severe financial consequences: increased transportation costs, idle driver penalties, reduced fleet utilization, and Service Level Agreement (SLA) breach fines.
+                        </p>
+                        <p>
+                            <strong>Core Objective:</strong> The <strong>SwiftCargo Shipment Delay Prediction System</strong> was developed to predict whether a consignment will experience a delay (<code>Delay_Flag = 1</code>) or arrive on-time (<code>Delay_Flag = 0</code>) prior to delivery. By combining multi-source operational data with real-time weather telemetry from OpenWeatherMap API, the system empowers logistics planners to identify high-risk shipments in advance, optimize route allocation, and adjust warehouse staging buffers proactively.
+                        </p>
+
+                        <div class="card" style="margin:24px 0; background:var(--yellow); border-radius:12px; padding:20px; border:2px solid var(--ink); box-shadow:var(--shadow-flat-sm);">
+                            <strong>Why Precision &amp; ROC-AUC Matter Most in Logistics Delays:</strong>
+                            <p style="margin-top:8px; font-size:0.95rem; line-height:1.6;">
+                                In delay prediction, delayed shipments are a minority class. Relying on raw accuracy can mask model deficiencies. SwiftCargo prioritizes <strong>Precision (73.68%)</strong> to prevent costly false alarms (e.g., initiating unnecessary emergency reroutes or expensive air freight expedites) while sustaining a strong <strong>ROC-AUC (72.46%)</strong> to cleanly discriminate between delayed and on-time shipments across varying operational risk thresholds.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 2: MULTI-SOURCE DATASET & QUALITY ASSESSMENT -->
+                    <section id="dataset-sources" style="padding:0; margin-bottom:48px;">
+                        <h2>2. Multi-Source Logistics Dataset &amp; Quality Assessment</h2>
+                        <p>
+                            The system models the complete shipment lifecycle from order placement to final delivery by unifying 12 structured operational data sources into a standardized, machine-learning-ready schema.
+                        </p>
+
+                        <div class="cs-table-wrap">
+                            <table class="cs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Data Source</th>
+                                        <th>Description &amp; Key Attributes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Shipment Details</strong></td>
+                                        <td>Core shipment identifiers, dimensions, and declared category</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Time Details</strong></td>
+                                        <td>Order Date, Dispatch Date, Scheduled Delivery Date, and timestamps</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Location Details</strong></td>
+                                        <td>Origin hub, destination city, and transportation distance covered (km)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Transport Details</strong></td>
+                                        <td>Vehicle capacity (kg), vehicle age, fleet size, and driver experience</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Carrier Details</strong></td>
+                                        <td>Carrier identifier, historical average rating, and reliability scores</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Package Details</strong></td>
+                                        <td>Shipment weight (kg), volume (CBM), and declared monetary value</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Weather Details</strong></td>
+                                        <td>Temperature (&deg;C), rainfall (mm), humidity (%), wind speed, visibility (km)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Traffic Details</strong></td>
+                                        <td>Road congestion index, route bottlenecks, and transit corridor delays</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Warehouse Details</strong></td>
+                                        <td>Warehouse capacity, current storage utilization (%), and staging dwell times</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Operations Details</strong></td>
+                                        <td>Dispatch lead times, handling efficiency, and maintenance inspection status</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Customer Preferences</strong></td>
+                                        <td>Shipment priority tiers (Express, Standard, Economy), domestic vs. import/export</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td><strong>Target Outcome</strong></td>
+                                        <td><strong>Delay_Flag:</strong> Binary classification target (0 = On-Time, 1 = Delayed)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Comprehensive Data Quality Assessment</h3>
+                        <p>Before training, the dataset underwent rigorous data sanitization to ensure production-grade model reliability:</p>
+                        <ul>
+                            <li><strong>Duplicate Record Elimination:</strong> Identified and purged redundant records generated during multi-file relational joins.</li>
+                            <li><strong>IQR Outlier Treatment:</strong> Extreme anomalies in continuous features (shipment weight, declared value, distance, and precipitation) were detected using the Interquartile Range (Q1 - 1.5&times;IQR to Q3 + 1.5&times;IQR) to avoid skewed estimator gradients.</li>
+                            <li><strong>Date &amp; Type Normalization:</strong> Unified disparate date formats into ISO datetime objects to derive consistent scheduling intervals.</li>
+                            <li><strong>Categorical Consistency:</strong> Normalized mixed-case, whitespace, and abbreviation differences across shipment priority and route risk attributes.</li>
+                        </ul>
+                    </section>
+
+                    <!-- SECTION 3: FEATURE ENGINEERING & PREPROCESSING PIPELINE -->
+                    <section id="feature-engineering" style="padding:0; margin-bottom:48px;">
+                        <h2>3. Feature Engineering &amp; Preprocessing Pipeline</h2>
+                        <p>
+                            Raw operational attributes were transformed into high-signal domain features to capture subtle supply-chain mechanics that raw variables could not express directly:
+                        </p>
+
+                        <div class="cs-table-wrap">
+                            <table class="cs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Engineered Feature</th>
+                                        <th>Calculation Formula</th>
+                                        <th>Logistics Rationale</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Vehicle Utilization</strong></td>
+                                        <td><code>Shipment Weight / Vehicle Capacity</code></td>
+                                        <td>Measures fleet load efficiency; overloaded vehicles experience higher transit failure rates.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Value Density</strong></td>
+                                        <td><code>Declared Value / Shipment Weight</code></td>
+                                        <td>Indicates high-value cargo requiring specialized handling or secure transit protocols.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Weight per Unit</strong></td>
+                                        <td><code>Shipment Weight / Number of Units</code></td>
+                                        <td>Reflects package bulkiness and warehouse loading/unloading dwell overhead.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Dispatch Lead Time</strong></td>
+                                        <td><code>Dispatch Date - Order Date</code></td>
+                                        <td>Captures fulfillment latency between booking creation and actual carrier departure.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Expected Transit Days</strong></td>
+                                        <td><code>Expected Delivery Date - Dispatch Date</code></td>
+                                        <td>Defines the tightest schedule constraint allocated for transit completion.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Dual-Phase Imputation &amp; Encoding Architecture</h3>
+                        <ul>
+                            <li><strong>Dual Imputation Strategy:</strong> During offline training, the <em>Iterative Imputer (MICE)</em> was employed to model multivariate dependencies across missing values. For live real-time single and batch inference, a precomputed median dictionary was deployed to ensure deterministic, sub-second latency with zero division-by-zero risks.</li>
+                            <li><strong>Categorical Encoding:</strong> Nominal attributes (Shipment Type, Weather Condition) were transformed via One-Hot Encoding, while ordinal features (Shipment Priority, Route Risk Level) used ordered Label Encoding.</li>
+                            <li><strong>Feature Standardization:</strong> Continuous numeric variables were scaled using <code>StandardScaler</code> to ensure smooth convergence across linear and distance-based baseline models.</li>
+                        </ul>
+                    </section>
+
+                    <!-- SECTION 4: MACHINE LEARNING MODELING & EVALUATION -->
+                    <section id="model-comparison" style="padding:0; margin-bottom:48px;">
+                        <h2>4. Machine Learning Modeling, Benchmarking &amp; Selection</h2>
+                        <p>
+                            A rigorous three-phase modeling methodology was conducted: (1) baseline comparison of 7 diverse classification algorithms, (2) hyperparameter optimization using <code>GridSearchCV</code> with 5-fold cross-validation, and (3) feature selection using Recursive Feature Elimination with Cross-Validation (<code>RFECV</code>).
+                        </p>
+
+                        <h3>Phase 1: Initial 7-Model Benchmark (80:20 Stratified Split)</h3>
+                        <div class="cs-table-wrap">
+                            <table class="cs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Model</th>
+                                        <th>Accuracy</th>
+                                        <th>Precision</th>
+                                        <th>Recall</th>
+                                        <th>F1-Score</th>
+                                        <th>ROC-AUC</th>
+                                        <th>Decision Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td><strong>Random Forest</strong> <span class="badge-best">Selected</span></td>
+                                        <td><strong>69.10%</strong></td>
+                                        <td><strong>70.97%</strong></td>
+                                        <td>26.29%</td>
+                                        <td>38.37%</td>
+                                        <td><strong>70.82%</strong></td>
+                                        <td>Advanced to Hyperparameter Tuning</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Support Vector Machine (SVM)</strong></td>
+                                        <td>69.10%</td>
+                                        <td>65.85%</td>
+                                        <td>32.27%</td>
+                                        <td>43.32%</td>
+                                        <td>70.74%</td>
+                                        <td>Excluded (high compute, low interpretability)</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td><strong>XGBoost</strong> <span class="badge-best">Selected</span></td>
+                                        <td>68.37%</td>
+                                        <td>59.14%</td>
+                                        <td><strong>43.82%</strong></td>
+                                        <td><strong>50.34%</strong></td>
+                                        <td>66.28%</td>
+                                        <td>Advanced to Hyperparameter Tuning</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td><strong>Logistic Regression</strong> <span class="badge-best">Selected</span></td>
+                                        <td>66.33%</td>
+                                        <td>61.90%</td>
+                                        <td>20.72%</td>
+                                        <td>31.04%</td>
+                                        <td>66.75%</td>
+                                        <td>Advanced as Interpretable Linear Baseline</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Na&iuml;ve Bayes</strong></td>
+                                        <td>65.01%</td>
+                                        <td>57.14%</td>
+                                        <td>17.53%</td>
+                                        <td>26.83%</td>
+                                        <td>60.81%</td>
+                                        <td>Eliminated</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Decision Tree</strong></td>
+                                        <td>60.20%</td>
+                                        <td>45.45%</td>
+                                        <td>43.82%</td>
+                                        <td>44.62%</td>
+                                        <td>56.74%</td>
+                                        <td>Eliminated (high variance, overfitting)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>K-Nearest Neighbors (KNN)</strong></td>
+                                        <td>52.77%</td>
+                                        <td>28.40%</td>
+                                        <td>19.12%</td>
+                                        <td>22.86%</td>
+                                        <td>43.27%</td>
+                                        <td>Eliminated</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Phase 2: Hyperparameter Tuning via GridSearchCV (5-Fold CV)</h3>
+                        <p>Systematic cross-validated grid search identified optimal hyperparameter configurations:</p>
+                        <div class="cs-table-wrap">
+                            <table class="cs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Model</th>
+                                        <th>Optimal Hyperparameters Identified</th>
+                                        <th>Post-Tuning Impact</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td><strong>Random Forest</strong></td>
+                                        <td><code>n_estimators=100, max_depth=20, min_samples_split=2, min_samples_leaf=1, random_state=42</code></td>
+                                        <td>Accuracy increased to <strong>70.41%</strong>; Precision climbed to <strong>74.49%</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>XGBoost</strong></td>
+                                        <td><code>learning_rate=0.1, max_depth=3, n_estimators=200, subsample=1.0</code></td>
+                                        <td>Balanced variance while sustaining high Recall across complex feature interactions</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Logistic Regression</strong></td>
+                                        <td><code>C=0.1, penalty='l2', solver='liblinear'</code></td>
+                                        <td>Improved convergence; Recall rose to 38.65% and F1-Score reached 47.78%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Phase 3: Feature Selection via RFECV &amp; Final Model Selection</h3>
+                        <p>
+                            Recursive Feature Elimination with Cross-Validation (<code>RFECV</code>) using a Random Forest estimator with Stratified 5-Fold CV eliminated noisy predictors and selected the <strong>30 most influential features</strong>.
+                        </p>
+
+                        <div class="cs-table-wrap">
+                            <table class="cs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Model (After RFECV)</th>
+                                        <th>Accuracy</th>
+                                        <th>Precision</th>
+                                        <th>Recall</th>
+                                        <th>F1-Score</th>
+                                        <th>ROC-AUC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td><strong>Random Forest Classifier</strong> <span class="badge-best">Champion Model</span></td>
+                                        <td><strong>71.28%</strong> (+2.18%)</td>
+                                        <td><strong>73.68%</strong></td>
+                                        <td>33.47%</td>
+                                        <td>46.03%</td>
+                                        <td><strong>72.46%</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Logistic Regression</strong></td>
+                                        <td>69.39% (+3.06%)</td>
+                                        <td>64.34%</td>
+                                        <td>36.65%</td>
+                                        <td>46.70%</td>
+                                        <td>70.16%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>XGBoost</strong></td>
+                                        <td>68.66% (+0.29%)</td>
+                                        <td>60.98%</td>
+                                        <td><strong>39.84%</strong></td>
+                                        <td><strong>48.19%</strong></td>
+                                        <td>—</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="card" style="margin:24px 0; background:var(--paper); border-radius:12px; padding:20px; border:2px solid var(--ink);">
+                            <strong>The 30 Optimal Predictors Identified by RFECV:</strong>
+                            <p style="margin-top:10px; font-size:0.9rem; line-height:1.7;">
+                                Priority &bull; Weight (kg) &bull; Volume (CBM) &bull; Declared Value &bull; Weight per Unit &bull; Average Rating &bull; Fleet Size &bull; Years of Service &bull; Vehicle Capacity (kg) &bull; Maintenance Status &bull; Vehicle Age &bull; Vehicle Utilization &bull; Warehouse Capacity &bull; Current Utilization &bull; Distance (km) &bull; Average Transit Days &bull; Route Risk &bull; Traffic Index &bull; Temperature &bull; Rainfall &bull; Humidity &bull; Wind Speed &bull; Visibility &bull; Dispatch Lead Time &bull; Expected Transit Days &bull; Value Density &bull; Shipment Type (Import) &bull; Weather Condition (Fog) &bull; Weather Condition (Storm) &bull; Documentation Complete.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 5: SYSTEM ARCHITECTURE & STREAMLIT WEB APP -->
+                    <section id="architecture" style="padding:0; margin-bottom:48px;">
+                        <h2>5. Production Architecture &amp; Streamlit Dashboard</h2>
+                        <p>
+                            The production system is deployed as an interactive web platform built with <strong>Streamlit</strong>, connecting real-time telemetry with serialized machine learning pipelines:
+                        </p>
+
+                        <div class="architecture-diagram">
+                            <div class="diagram-step">
+                                <span class="step-num">1</span>
+                                <div><strong>Client Interface:</strong> Streamlit web UI supporting both interactive single-shipment parameter entry and bulk CSV file uploads for batch enterprise processing.</div>
+                            </div>
+                            <div class="diagram-step">
+                                <span class="step-num">2</span>
+                                <div><strong>Live Weather Telemetry:</strong> Automatic connection to <strong>OpenWeatherMap API</strong> to retrieve real-time temperature, precipitation, humidity, and visibility for the destination city, with Streamlit caching (<code>@st.cache_data</code>).</div>
+                            </div>
+                            <div class="diagram-step">
+                                <span class="step-num">3</span>
+                                <div><strong>Validation &amp; Schema Alignment Engine:</strong> Input sanitization, median fallback imputation, runtime feature derivation (utilization, value density), and exact reordering to match the 30-feature vector.</div>
+                            </div>
+                            <div class="diagram-step">
+                                <span class="step-num">4</span>
+                                <div><strong>Model Inference Pipeline:</strong> Serialized Random Forest model artifact (<code>Joblib</code>) computing binary status and calibrated delay probabilities.</div>
+                            </div>
+                            <div class="diagram-step">
+                                <span class="step-num">5</span>
+                                <div><strong>Decision Support Dashboard:</strong> Prediction status badge (<code>DELAYED</code> vs <code>ON-TIME</code>), delay probability gauge, model confidence rating, operational recommendations, risk breakdown charts, and CSV report export.</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 6: TECHNICAL CHALLENGES & PRODUCTION SOLUTIONS -->
+                    <section id="challenges" style="padding:0; margin-bottom:48px;">
+                        <h2>6. Technical Challenges &amp; Production Solutions</h2>
+                        <ul>
+                            <li><strong>Missing Values in Live Prediction Inputs:</strong> Users occasionally omit secondary numerical attributes during manual entry. A fallback imputation mechanism was constructed using precomputed training medians stored in a lookup dictionary, ensuring deterministic inference without pipeline crashes.</li>
+                            <li><strong>Training&ndash;Prediction Feature Consistency:</strong> The trained model strictly requires 30 features in an immutable sequence. A centralized preprocessing controller was built to enforce schema alignment, reordering incoming parameters and dynamically generating missing dummy variables.</li>
+                            <li><strong>Inconsistent Categorical Inputs:</strong> Case differences (e.g., "express" vs "Express") and whitespace typos were eliminated by integrating case-insensitive fuzzy mapping dictionaries across all categorical attributes.</li>
+                            <li><strong>Weather API Network Failures:</strong> Internet drops or external API timeouts were shielded by comprehensive <code>try/except</code> exception handlers, automatic retry logic, and fallback to historical seasonal defaults combined with Streamlit caching.</li>
+                            <li><strong>Safe Runtime Feature Derivation:</strong> Mathematical features like Vehicle Utilization and Value Density include division-by-zero guards to prevent infinite or NaN float exceptions during runtime.</li>
+                            <li><strong>Dual Imputation Paradigm:</strong> Successfully decoupled the data pipeline: computationally intensive MICE for offline batch model exploration vs. instantaneous, deterministic median substitution for live single-record web serving.</li>
+                        </ul>
+                    </section>
+
+                    <!-- SECTION 7: BUSINESS VALUE, LIMITATIONS & ROADMAP -->
+                    <section id="business-value" style="padding:0; margin-bottom:48px;">
+                        <h2>7. Business Value, Limitations &amp; Future Roadmap</h2>
+                        <p>
+                            <strong>Operational Impact:</strong> SwiftCargo shifts freight dispatch from reactive damage control to proactive decision-making. By identifying at-risk shipments prior to departure, fleet controllers can reschedule dispatch windows, assign experienced drivers to complex routes, and inform customers ahead of time&mdash;minimizing SLA penalties and preserving carrier trust.
+                        </p>
+
+                        <h3>Current Limitations</h3>
+                        <p>
+                            While the model delivers strong Precision (73.68%), the Recall stands at 33.47%, indicating that certain edge-case delays remain undetected due to unpredictable en-route incidents (such as spontaneous accidents or unannounced customs holds). Additionally, prediction reliability depends on the availability of real-time destination weather telemetry.
+                        </p>
+
+                        <h3>Future Technical Roadmap</h3>
+                        <ul>
+                            <li><strong>Threshold &amp; Cost-Sensitive Tuning:</strong> Adjusting decision thresholds and class weights to bias the classifier toward higher recall for time-critical express consignments.</li>
+                            <li><strong>Deep Learning &amp; Neural Approaches:</strong> Benchmarking Artificial Neural Networks (ANNs) and TabNet for deeper feature representations.</li>
+                            <li><strong>Real-Time Telematics &amp; GPS Feeds:</strong> Streaming live GPS coordinate traces and dynamic traffic matrices directly into the inference pipeline.</li>
+                            <li><strong>Continuous Automated Retraining:</strong> Automated MLOps retraining triggers as new trip delivery logs are archived into data warehouses.</li>
+                        </ul>
+                    </section>
+
+                    <!-- SECTION 8: REPOSITORY & ARTIFACT LINKS -->
+                    <section id="links" style="padding:0; margin-bottom:48px;">
+                        <h2>8. Project Artifacts &amp; Live Links</h2>
+                        <div class="hero-ctas" style="margin-top:20px; flex-wrap:wrap; gap:14px;">
+                            <a href="https://swiftcargoshipmentdelayprediction-a8bcuz9uvpretde4uqo8oc.streamlit.app/" target="_blank" rel="noopener" class="btn btn-solid">&#128640; Launch Live Streamlit App &#8599;</a>
+                            <a href="https://github.com/Devendra-Vinod-Patil/SwiftCargo_shipment_delay_prediction" target="_blank" rel="noopener" class="btn btn-ghost">&#128187; GitHub Repository &#8599;</a>
+                            <a href="projects.html" class="btn btn-ghost">&larr; Back to All Projects</a>
+                        </div>
+                    </section>
+
+                </article>
+
+                <!-- STICKY SIDEBAR -->
+                <aside class="cs-sidebar">
+                    <div class="cs-side-box">
+                        <h4>Table of Contents</h4>
+                        <nav class="cs-toc-list" aria-label="Case Study Sections">
+                            <a href="#executive-summary">1. Executive Summary</a>
+                            <a href="#dataset-sources">2. 12-Source Logistics Data</a>
+                            <a href="#feature-engineering">3. Feature Engineering</a>
+                            <a href="#model-comparison">4. 7-Model Benchmark &amp; RFECV</a>
+                            <a href="#architecture">5. Production Streamlit App</a>
+                            <a href="#challenges">6. Technical Challenges</a>
+                            <a href="#business-value">7. Business Value &amp; Roadmap</a>
+                            <a href="#links">8. Artifacts &amp; Live Links</a>
+                        </nav>
+                    </div>
+
+                    <div class="cs-side-box" style="background:var(--blue);">
+                        <h4>Project Snapshot</h4>
+                        <p style="font-size:0.88rem; line-height:1.55; margin-bottom:14px;">
+                            <strong>SwiftCargo ML System</strong><br>
+                            End-to-end supply chain intelligence with 71.28% accuracy, 30 RFECV features, and live weather API integration.
+                        </p>
+                        <a href="https://swiftcargoshipmentdelayprediction-a8bcuz9uvpretde4uqo8oc.streamlit.app/" target="_blank" rel="noopener" class="btn btn-sm btn-solid" style="width:100%; justify-content:center; margin-bottom:8px;">Live Streamlit App &#8599;</a>
+                        <a href="docs/SwiftCargo_Project_Report.pdf" download="SwiftCargo_Project_Report.pdf" class="btn btn-sm btn-ghost" style="width:100%; justify-content:center; margin-bottom:8px; background:#FFF;">Download Report (PDF) &darr;</a>
+                        <a href="contact.html" class="btn btn-sm btn-ghost" style="width:100%; justify-content:center; background:#FFF;">Discuss this Project &rarr;</a>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand & Introduction -->
+                <div class="footer-col footer-brand-col">
+                    <a href="index.html" class="logo footer-logo" aria-label="Devendra Patil Homepage">
+                        <span class="star">&#10022;</span> DEVENDRA
+                    </a>
+                    <p class="footer-tagline">
+                        Building practical AI/ML solutions and data-driven applications through Python, machine
+                        learning, and continuous learning.
+                    </p>
+                    <div class="footer-social-pills" aria-label="Social profiles">
+                        <a href="https://github.com/Devendra-Vinod-Patil" target="_blank" rel="noopener noreferrer"
+                            class="footer-social-btn" aria-label="GitHub Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/devendra984" target="_blank" rel="noopener noreferrer"
+                            class="footer-social-btn" aria-label="LinkedIn Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:patildevendra984@gmail.com" class="footer-social-btn" aria-label="Send Email">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Navigation -->
+                <div class="footer-col footer-nav-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links-grid">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact & Professional Details -->
+                <div class="footer-col footer-contact-col">
+                    <h3 class="footer-heading">Let&rsquo;s Connect</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:patildevendra984@gmail.com"
+                                class="footer-contact-link">patildevendra984@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Surat, Gujarat, India</span>
+                        </li>
+                        <li>
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                            <span>B.E. Information Technology</span>
+                        </li>
+                        <li class="footer-resume-item">
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="12" y1="18" x2="12" y2="12"></line>
+                                <line x1="9" y1="15" x2="12" y2="18"></line>
+                                <line x1="15" y1="15" x2="12" y2="18"></line>
+                            </svg>
+                            <a href="Devendra_Vinod_Patil_Resume.pdf" download="Devendra_Vinod_Patil_Resume.pdf"
+                                class="footer-contact-link footer-resume-link">
+                                Download Resume (PDF) &darr;
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="footer-bottom-bar">
+                <span class="footer-copy">&copy; 2026 Devendra Vinod Patil. All rights reserved.</span>
+                <span class="footer-craft">Designed &amp; built with care.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Dialog Component -->
+    <dialog id="certModal">
+        <div class="lightbox-content">
+            <div class="lightbox-header">
+                <span class="lightbox-title" id="certModalTitle">Preview</span>
+                <button class="lightbox-close-btn" id="certModalClose" aria-label="Close dialog">&times;</button>
+            </div>
+            <img class="lightbox-img" id="certModalImg" src="" alt="Full view">
+            <p class="lightbox-caption" id="certModalCaption"></p>
+        </div>
+    </dialog>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
