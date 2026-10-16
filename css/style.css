@@ -84,14 +84,14 @@ textarea {
    1. DESIGN TOKENS (MODIFY COLORS & FONTS HERE)
 ============================================================ */
 :root {
-    /* Color Palette */
+    /* Color Palette — Masculine Blue Theme & Plain White */
     --bg: #FFFFFF;
-    --paper: #FFFDF9;
+    --paper: #FFFFFF;
     --ink: #111111;
     --ink-soft: #4a4744;
-    --pink: #FF8FCB;
-    --pink-deep: #f45fae;
-    --pink-soft: #FFD6EC;
+    --pink: #3B82F6;        /* Primary Boy Accent: Vibrant Royal / Electric Blue */
+    --pink-deep: #1D4ED8;   /* Deep Boy Accent: Rich Cobalt / Navy Blue */
+    --pink-soft: #DBEAFE;   /* Soft Boy Accent: Soft Ice / Sky Blue Pastel */
     --yellow: #FFE9A6;
     --blue: #ADE2F6;
     --green: #C7F0C2;
@@ -117,22 +117,36 @@ textarea {
    2. BASE & GLOBAL TYPOGRAPHY
 ============================================================ */
 body {
-    background: var(--bg);
+    background: #FFFFFF;
     color: var(--ink);
     font-family: var(--ff-body);
     font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    background-image:
-        radial-gradient(circle, rgba(17, 17, 17, 0.06) 1px, transparent 1px);
-    background-size: 22px 22px;
-    background-position: -10px -10px;
+    background-image: none;
 }
 
 ::selection {
-    background: var(--pink);
-    color: var(--ink);
+    background: #2563EB;
+    color: #FFFFFF;
+}
+
+::-moz-selection {
+    background: #2563EB;
+    color: #FFFFFF;
+}
+
+input::selection,
+textarea::selection {
+    background: #2563EB;
+    color: #FFFFFF;
+}
+
+input::-moz-selection,
+textarea::-moz-selection {
+    background: #2563EB;
+    color: #FFFFFF;
 }
 
 :focus-visible {
@@ -957,7 +971,7 @@ header {
 .goal-highlight {
     font-weight: 600;
     color: var(--ink);
-    background: linear-gradient(120deg, rgba(255, 233, 166, 0.6) 0%, rgba(255, 214, 236, 0.6) 100%);
+    background: linear-gradient(120deg, rgba(255, 233, 166, 0.6) 0%, rgba(219, 234, 254, 0.8) 100%);
     padding: 2px 6px;
     border-radius: 4px;
     border-bottom: 1.5px solid var(--ink);
